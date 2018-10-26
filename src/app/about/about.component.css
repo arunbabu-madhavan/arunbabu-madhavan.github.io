@@ -7,7 +7,7 @@
 }
 
 .about-container > * {
-    padding: 30pt;
+    margin: 30pt;
 }
 app-experience,app-skills{
     display: flex;

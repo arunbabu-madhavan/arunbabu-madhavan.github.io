@@ -3,7 +3,7 @@
   <svg height="40" [routerLink]="routerLink" [attr.width]="width">
     <rect id="shape" height="40" [attr.width]="width" [style.stroke-dashoffset]="dashOffset"></rect>
     </svg><div id="text">
-      <a (click)="OnClick()"><span class="spot"></span><ng-content></ng-content></a>
+      <a (click)="OnClick()" [href]="link" target="_blank"><span class="spot"></span><ng-content></ng-content></a>
     </div>
   
 </div>

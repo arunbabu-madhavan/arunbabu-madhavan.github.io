@@ -9,6 +9,7 @@ export class BorderHoverLedButtonComponent implements OnInit {
   @Output() ButtonClicked: EventEmitter<void> = new  EventEmitter<void>();
   @Input() width:number;
   @Input() routerLink:any[];
+  @Input() link:string;
   dashOffset:number;
   constructor() { 
     this.width = 150;

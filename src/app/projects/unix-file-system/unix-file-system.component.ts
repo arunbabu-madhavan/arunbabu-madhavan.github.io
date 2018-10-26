@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class UnixFileSystemComponent implements OnInit {
   images:string[];
   constructor() { 
-    this.images = ["assets/images/projects/unixfs/1.png"
-                          ,"assets/images/projects/unixfs/2.png"
-                         ,"assets/images/projects/unixfs/3.png"];
+    this.images = ["assets/images/projects/unixfs/1.PNG"
+                          ,"assets/images/projects/unixfs/2.PNG"
+                         ,"assets/images/projects/unixfs/3.PNG"];
 
   }
   ngOnInit() {

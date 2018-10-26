@@ -18,8 +18,9 @@
      width: 100%;    
     justify-content: center;
     box-sizing: border-box;
-    max-width: 480px;;
+    max-width: 1080px;;
     align-items: center;
+    display: flex;
  
    }
  
@@ -40,12 +41,15 @@
     cursor: pointer;
 }
 
+  
 @media screen and (min-width: 850px) {
 
-    .filter-container >div{
-        padding: 25px 50px;
-    }    
+  .filter-container >div{
+      padding: 25px 50px;
+  }    
 }
+
+
 
 a {
     
@@ -63,13 +67,14 @@ a {
     width: calc(100vw - 50pt);
     cursor: pointer;
     height: 170px;
-    background-color: brown;
-    box-shadow: 5px 3px #ccc;
+    background-color: white;
+    box-shadow: 0 2px 3px 2px #ccc;
     display: inline-block;
     position: relative;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    margin: 10pt;
     background-position: center;  
   }
   .gallery-item > div {
@@ -109,9 +114,6 @@ a {
         height: 256px;
       }
     
-  .container-gallery{
-      min-width: 1080px;
-    }
 }
     
   a.active , .mixitup-control-active a{
