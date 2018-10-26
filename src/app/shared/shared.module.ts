@@ -8,12 +8,14 @@ import { FooterComponent } from './footer/footer.component';
 import { ColorPaletteDirective } from './directives/color-palette.directive';
 import { BorderHoverLedButtonComponent } from './buttons/border-hover-led-button/border-hover-led-button.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule
   ],
   providers:[],
   declarations: [RightPointButtonComponent,CarouselComponent,BorderHoverLedButtonComponent, TopNavigationBarComponent, DayNightColorDirective, FooterComponent,ColorPaletteDirective, CarouselComponent],

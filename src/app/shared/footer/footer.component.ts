@@ -8,7 +8,7 @@ import { LayoutManager } from '../services/layout.service';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private layout:LayoutManager) { }
+  constructor(public layout:LayoutManager) { }
 
   ngOnInit() {
   }

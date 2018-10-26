@@ -1,15 +1,15 @@
 
 
 import {sequence, trigger, stagger, animate, style, group, query as q, transition, keyframes, animateChild} from '@angular/animations';
-const query = (s,a,o={optional:true})=>q(s,a,o);
+
 
 export const routerTransition = trigger('routerTransition', [
 
 
 
     transition( '* => article', [
-        query(':enter', style({ position: 'fixed', width:'100%' })),
-        group([  query(' :enter', 
+        q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
+        group([  q(' :enter', 
         [
             style({ opacity: 0 , transform: 'translateY(-100%)'})
         ], 
@@ -17,7 +17,7 @@ export const routerTransition = trigger('routerTransition', [
     ),
     
     
-    query(':enter', 
+    q(':enter', 
         [
             style({ opacity: 0, transform: 'translateY(-100%)' }),
             animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'translateY(0)'}))
@@ -28,8 +28,8 @@ export const routerTransition = trigger('routerTransition', [
     ]),
 
 transition( '* => profile', [
-    query(':enter', style({ position: 'fixed', width:'100%' })),
-    group([  query(' :enter', 
+    q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
+    group([  q(' :enter', 
     [
         style({ opacity: 0 , transform: 'scale(3)'})
     ], 
@@ -37,7 +37,7 @@ transition( '* => profile', [
 ),
 
 
-query(':enter', 
+q(':enter', 
     [
         style({ opacity: 0, transform: 'scale(3)' }),
         animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'scale(1)'}))
@@ -49,8 +49,8 @@ query(':enter',
 
 
 transition( '* => about', [
-    query(':enter', style({ position: 'fixed', width:'100%' })),
-    group([  query(' :enter', 
+    q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
+    group([  q(' :enter', 
         [
             style({ opacity: 0 , transform: 'scale(2)'})
         ], 
@@ -58,7 +58,7 @@ transition( '* => about', [
     ),
 
 
-    query(':enter', 
+    q(':enter', 
         [
             style({ opacity: 0, transform: 'scale(2)' }),
             animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'scale(1)'}))
@@ -71,8 +71,8 @@ transition( '* => about', [
 
 
 transition( '* => articles', [
-    query(':enter', style({ position: 'fixed', width:'100%' })),
-    group([  query(' :enter', 
+    q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
+    group([  q(' :enter', 
         [
             style({ opacity: 0 , transform: 'scale(2)'})
         ], 
@@ -80,7 +80,7 @@ transition( '* => articles', [
     ),
 
 
-    query(':enter', 
+    q(':enter', 
         [
             style({ opacity: 0, transform: 'scale(2)' }),
             animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'scale(1)'}))
@@ -97,15 +97,15 @@ transition( '* => articles', [
 
 
 transition( '* => project', [
-    query(':enter', style({  opacity: 0 , transform: 'scale(0)'})),
-    group([  query(' :enter', 
+    q(':enter', style({  opacity: 0 , transform: 'scale(0)'}),{ optional: true }),
+    group([  q(' :enter', 
         [
             style({ opacity: 1 , transform: 'scale(1)'})
         ], 
         { optional: true }
     ),
 
-    query(':enter', 
+    q(':enter', 
         [
             style({ opacity: 0, transform: 'scale(0)' }),
             animate('450ms ease-in-out', style({ opacity: 1 ,transform: 'scale(1)'}))
@@ -117,8 +117,8 @@ transition( '* => project', [
 
 
 transition( '* => projects', [
-    query(':enter', style({ position: 'fixed', width:'100%' })),
-    group([  query(' :enter', 
+    q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
+    group([  q(' :enter', 
         [
             style({ opacity: 0 , transform: 'scale(0)'})
         ], 
@@ -126,7 +126,7 @@ transition( '* => projects', [
     ),
 
 
-    query(':enter', 
+    q(':enter', 
         [
             style({ opacity: 0, transform: 'scale(0)' }),
             animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'scale(1)'}))

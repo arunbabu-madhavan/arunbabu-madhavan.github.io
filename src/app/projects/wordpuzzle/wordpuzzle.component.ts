@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class WordpuzzleComponent implements OnInit {
   images:string[];
   constructor() { 
-    this.images = ["/src/assets/images/projects/wordpuzzle/1.png"
-    ,"/src/assets/images/projects/wordpuzzle/2.png"
-   ,"/src/assets/images/projects/wordpuzzle/3.png"
-  ,"/src/assets/images/projects/wordpuzzle/4.png"];
+    this.images = ["assets/images/projects/wordpuzzle/1.png"
+    ,"assets/images/projects/wordpuzzle/2.png"
+   ,"assets/images/projects/wordpuzzle/3.png"
+  ,"assets/images/projects/wordpuzzle/4.png"];
 
   }
 

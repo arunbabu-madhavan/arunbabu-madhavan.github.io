@@ -9,7 +9,7 @@ export class BioComponent implements OnInit {
   images:string[];
   image:string;
   constructor() { 
-    this.images = ["/src/assets/images/bio/1.png"];
+    this.images = ["assets/images/bio/1.png"];
   }
 
   ngOnInit() {

@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { default  as mixitup } from "mixitup"
 import { routerTransition } from '../router.transtions';
 @Component({
-  selector: 'app-projects',
   templateUrl: './projects.component.html',
   animations: [ routerTransition ],
   styleUrls: ['./projects.component.css']

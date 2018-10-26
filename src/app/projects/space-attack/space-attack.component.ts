@@ -9,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class SpaceAttackComponent implements OnInit {
   images:string[];
   constructor() { 
-    this.images = ["/src/assets/images/projects/spaceattack/1.png"
-                          ,"/src/assets/images/projects/spaceattack/2.png"
-                         ,"/src/assets/images/projects/spaceattack/3.png"];
+    this.images = ["assets/images/projects/spaceattack/1.png"
+                          ,"assets/images/projects/spaceattack/2.png"
+                         ,"assets/images/projects/spaceattack/3.png"];
 
   }
 
