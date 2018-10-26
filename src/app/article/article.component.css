@@ -1,0 +1,123 @@
+.article-container{
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    margin-top:50px;
+    line-height: 21pt;
+}
+
+.heading{
+    font-family: 'Roboto';
+    font-size: xx-large;
+}
+.heading > img{
+    height: 88pt;
+}
+.article-list {
+   min-height: 150pt;
+   margin-bottom: 50pt;
+   display: flex;
+   flex-direction: column
+}
+
+.article-list-container{
+    padding: 25pt;
+}
+.article-list > div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.article-list > div > div:first-child{
+    display: none;
+}
+.article-list > div > div:last-child{
+
+    margin-top: 2em;
+    margin-left: 2em;
+    flex: 1;
+    position: relative;
+
+}
+.article-list > div > div:last-child > div:last-child{
+
+ 
+   font-size: 8pt;
+
+}
+  
+.heading-link > a{
+color:#15c;
+font-size: large;
+
+}
+.heading-link > a:hover{
+    color:#1ac;
+}
+
+.calendar
+{
+  font-size: 1em; 
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  margin: 2em auto;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: rotate(0deg) skewY(0deg);
+  transform-origin: 50% 10%;
+  transform-origin: 50% 10%;
+}
+
+.calendar strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #fd9f1b;
+  border-bottom: 1px dashed #f37302;
+  box-shadow: 0 2px 0 #fd9f1b;
+}
+.calendar span
+{
+  width: 100%;
+  font-size: 1.8em;
+  letter-spacing: -0.05em;
+  padding-top: 1.8em;
+  color: #2f2f2f;
+}
+.calendar  > *
+{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+.calendar em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #fd9f1b;
+}
+
+@media screen and (min-width:445px)
+{
+    .article-list > div > div:last-child{
+        margin-left: 3em;
+    }
+
+    .article-list > div > div:first-child{
+        display: block;
+    }
+}

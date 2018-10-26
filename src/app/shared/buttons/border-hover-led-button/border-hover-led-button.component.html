@@ -1,0 +1,9 @@
+
+<div class="svg-wrapper" [style.width.px]="width" >
+  <svg height="40" [routerLink]="routerLink" [attr.width]="width">
+    <rect id="shape" height="40" [attr.width]="width" [style.stroke-dashoffset]="dashOffset"></rect>
+    </svg><div id="text">
+      <a (click)="OnClick()"><span class="spot"></span><ng-content></ng-content></a>
+    </div>
+  
+</div>

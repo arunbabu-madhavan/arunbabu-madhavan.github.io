@@ -1,0 +1,142 @@
+.image-container > div{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 750ms ease-in-out;
+    background-color: black;
+}
+
+
+.carousel-container{
+    height: 150px;
+  
+    position: relative;
+}
+@media screen and (min-width: 420px) {
+    .carousel-container{
+        height: 300px;
+      
+        position: relative;
+    }
+    .image-container > div{
+
+        height: 290px;
+    }
+    }
+
+@media screen and (min-width: 687px) {
+.carousel-container{
+    height: 460px;
+    width: 100%;
+    position: relative;
+}
+.image-container > div{
+
+    height: 450px;
+}
+}
+
+
+.slider-controls{
+    position: absolute;
+    top: 46%;
+    width: 100%;
+   
+
+}
+
+.slider-radio-controls{
+    display: none;
+}
+
+.slider-controls >label::after{
+    padding-left: 6pt;
+    padding-top: 5.5pt;
+    padding-right: 6pt;
+    height: 45px;
+    width: 45px;
+    border: 1px solid transparent;
+
+    border-radius: 50%;
+    transition: background-color 750ms ease-in-out;
+}
+
+.slider-controls >label{
+    font-family: 'FontAwesome';
+    color: rgba(201,201,201,0.4);
+    font-size: xx-large;
+    cursor: pointer;
+  
+}
+.slider-controls >label:hover::after
+{
+    color: rgba(201,201,201,0.9);
+    background-color:rgba(0,0,0,0.7);
+}
+#slide1:checked ~ .slider-controls > label:nth-child(2),
+#slide1:checked ~ .slider-controls > label:nth-last-child(1),
+{
+      display: block;  
+     
+}
+
+#slide1:checked ~ .slider-controls > label:nth-child(2)::after,
+#slide2:checked ~ .slider-controls > label:nth-child(3)::after,
+#slide3:checked ~ .slider-controls > label:nth-child(4)::after,
+#slide4:checked ~ .slider-controls > label:nth-child(5)::after,
+#slide5:checked ~ .slider-controls > label:nth-child(6)::after,
+#slide6:checked ~ .slider-controls > label:nth-child(7)::after
+{
+    float: right;
+    content: '\f054';
+    text-align: right;
+}
+ #slide1:checked ~ .slider-controls > label:nth-last-child(1)::after{
+    float: left;
+    content: '\f053';
+}
+
+#slide2:checked ~ .slider-controls > label:nth-child(1)::after,
+#slide3:checked ~ .slider-controls > label:nth-child(2)::after,
+#slide4:checked ~ .slider-controls > label:nth-child(3)::after,
+#slide5:checked ~ .slider-controls > label:nth-child(4)::after,
+#slide6:checked ~ .slider-controls > label:nth-child(5)::after,
+#slide7:checked ~ .slider-controls > label:nth-child(6)::after,
+#slide8:checked ~ .slider-controls > label:nth-child(7)::after{
+    float: left;
+    content: '\f053';
+}
+
+.slider-radio-controls:last-of-type:checked ~ .slider-controls > label:nth-last-child(2)::after{
+    float: left;
+    content: '\f053';
+}
+.slider-radio-controls:last-of-type:checked ~ .slider-controls > label:nth-child(1)::after{
+    float: right;
+    content: '\f054';
+    text-align: right;
+}
+
+.image-container{
+    width: 100%;
+    position: relative;
+
+}
+
+#slide1:checked ~ .image-container > div:nth-child(1),
+#slide2:checked ~ .image-container > div:nth-child(2),
+#slide3:checked ~ .image-container > div:nth-child(3),
+#slide4:checked ~ .image-container > div:nth-child(4),
+#slide5:checked ~ .image-container > div:nth-child(5),
+#slide6:checked ~ .image-container > div:nth-child(6),
+#slide7:checked ~ .image-container > div:nth-child(7)
+{
+    visibility: visible;
+    opacity: 1;
+    
+}
