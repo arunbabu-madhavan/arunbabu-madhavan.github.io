@@ -1,0 +1,66 @@
+[
+    {
+        "ProjectId":"1",
+        "ProjectName":"Word Puzzle",
+        "Description":"A grid consisting of letters is to be checked against a dictionary of words. The user can input a value for the rows and columns of the grid and the program will create a grid of random characters. The program will read in a dictionary file (100,000 words) and use an algorithm to solve the word puzzle. The program outputs the elapsed time.",
+        "showLink":"false",
+        "linkType":"0",
+        "linkhref":"",
+        "linkText":"",
+        "carouselImages":["assets/images/projects/wordpuzzle/1.PNG"
+            ,"assets/images/projects/wordpuzzle/2.PNG"
+           ,"assets/images/projects/wordpuzzle/3.PNG"
+          ,"assets/images/projects/wordpuzzle/4.PNG"]
+    }
+,
+{
+    "ProjectId":"2",
+    "ProjectName":"Word Puzzle",
+    "Description":"A simple browser-based 2D game using HTML5/CSS3. Designed the game objects using HTML5 canvas and sprites. The game engine was built from scratch using only Vanilla JavaScript. My love for JavaScript and front-end development started from here.",
+    "showLink":"true",
+    "linkType":"1",
+    "linkhref":"https://arunbabu-madhavan.github.io/SpaceAttack/",
+    "linkText":"Play Game!",
+    "carouselImages":["assets/images/projects/spaceattack/a.png"
+        ,"assets/images/projects/spaceattack/b.png"
+       ,"assets/images/projects/spaceattack/c.png"]
+}
+,
+{
+    "ProjectId":"3",
+    "ProjectName":"My Personal Portfolio",
+    "Description":"The same website you are browsing. Built using Angular 6, HTML5 and CSS3. Most of the animations and styles are designed and coded from scratch without using any external UI/UX frameworks. The designs are inspired from various articles and many other intriguing websites I visited which made me think, <b> How did he do that?!</b> I plan to constantly update the website and use it as my playground to learn and implement new web technologies.",
+    "showLink":"false",
+    "linkType":"0",
+    "linkhref":"",
+    "linkText":"",
+    "carouselImages":["assets/images/projects/website/1.png"
+        ,"assets/images/projects/website/2.png"
+       ,"assets/images/projects/website/3.png"
+      ,"assets/images/projects/website/4.png"]
+}
+
+,
+{
+    "ProjectId":"4",
+    "ProjectName":"Play Chat",
+    "Description":"The idea is to create a android chat application like WhatsApp, WeChat where users will have an option to play games with each other. It is still in development.",
+    "showLink":"true",
+    "linkType":"2",
+    "linkhref":"",
+    "linkText":"Get App!",
+    "carouselImages":["assets/images/projects/playchat/underc.png"]
+},
+{
+    "ProjectId":"5",
+    "ProjectName":"UNIX v6 File System",
+    "Description":"Unix V6 file system has a current limitation of 16MB on file size. Redesigned the file system to remove this limitation and support files upto 4GB size. Supported Commands: <b> initfs | q </b>",
+    "showLink":"false",
+    "linkType":"0",
+    "linkhref":"",
+    "linkText":"",
+    "carouselImages":["assets/images/projects/unixfs/1.PNG"
+        ,"assets/images/projects/unixfs/2.PNG"
+       ,"assets/images/projects/unixfs/3.PNG"]
+}
+]

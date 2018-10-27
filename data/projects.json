@@ -1,0 +1,58 @@
+[
+   {
+        "ProjectId":"1",
+        "ProjectName":"Word Puzzle",
+        "ShortDesc":"A word puzzle solver in Java",
+        "InProgress":false,
+        "Categories":["c"],
+        "ShowDetails":"true",
+        "ImageFile":"word.png"
+    }
+,
+    {
+        "ProjectId":"2",
+        "ProjectName":"Space Attack",
+        "ShortDesc":"A Javascript 2D game",
+        "InProgress":false,
+        "ShowDetails":"true",
+        "Categories":["js" , "games"],
+        "ImageFile":"space_attack.png"
+    }
+,
+
+{
+    "ProjectId":"3",
+    "ProjectName":"this.website();",
+    "ShortDesc":"Built with Angular",
+    "InProgress":false,
+    "Categories":["js"],
+    "ShowDetails":"true",
+    "ImageFile":"website.png"
+}
+,
+
+{
+    "ProjectId":"4",
+    "ProjectName":"Play Chat",
+    "ShortDesc":"Android chat app with real-time games",
+    "InProgress":true,
+    "Categories":["android"],
+    "ImageFile":"chat.jpg",
+    "ShowDetails":"true"
+}
+,
+
+{
+    "ProjectId":"5",
+    "ProjectName":"UNIX v6 File System",
+    "ShortDesc":"File system setup and I/O",
+    "InProgress":true,
+    "ShowDetails":"true",
+    "Categories":["c"],
+    "ImageFile":"unix.png"
+}
+
+
+
+
+]
