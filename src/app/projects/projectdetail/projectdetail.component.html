@@ -1,0 +1,19 @@
+<div class="project-popup">
+    <div *ngIf="project">
+        <app-carousel [images]="project.carouselImages"></app-carousel>
+        <div class="info">
+            <div>
+              {{project.ProjectName}}
+            </div>
+            <div class="desc">
+                <p [innerHTML]="project.Description"></p>
+            </div>
+            <div class="links" *ngIf="project.showLink" [ngSwitch]="project.linkType"> 
+              <border-hover-led-button
+               *ngSwitchCase="1"  [width]=178 [link]="project.linkhref">
+               {{project.linkText}}</border-hover-led-button></div>
+        </div>
+        <div class="close" routerLink="/projects"><i  class="fa fa-times"></i></div>
+    </div>
+  </div>
+  

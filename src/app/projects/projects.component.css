@@ -19,7 +19,6 @@
     justify-content: center;
     box-sizing: border-box;
     max-width: 1080px;;
-    align-items: center;
     display: flex;
  
    }
@@ -31,7 +30,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-top: 70px;
+  
 }
 
 
@@ -109,6 +108,12 @@ a {
         box-shadow: 0 2px 3px 2px #ccc;
     
     }
+
+    .filter-container{
+    
+      margin-top: 70px;
+    }
+
 
     .gallery-item > div {
         height: 256px;

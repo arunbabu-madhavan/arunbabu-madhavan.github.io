@@ -8,72 +8,19 @@
         <div class="filter" data-filter=".c"><a>Java & C/C++</a></div>
       </div>
       <div class="container-gallery">
-              <div class="gallery-item mix c" data-order="4"
-              style="background-image:url('assets/images/projects/word.png')"
-              routerLink="wordpuzzle">
+              <div class="gallery-item mix" [ngClass]="project.Categories.join(' ')" *ngFor="let project of projects"
+              [ngStyle]="{'background-image': 'url('+ imagesDir + project.ImageFile +')'}"
+              [routerLink]="['project',project.ProjectId]">
               <div>
                   <div>
-                      <span>Word Puzzle </span><br/>
-                      A word puzzle solver in Java
-                 </div>
+                      <span>{{project.ProjectName}}</span><br/>
+                     {{ project.ShortDesc }}
+                 </div> 
                   <div>
-                   <button>More details</button>
+                   <button *ngIf="!project.InProgress; else inProgressButton">More details</button>
+                 <ng-template #inProgressButton><button>In progress</button></ng-template>  
                   </div>
                 </div>
-
-              </div>
-              <div class="gallery-item mix games js" data-order="1"
-                               style="background-image:url('assets/images/projects/space_attack.png')"
-                                routerLink="spaceAttack">
-                                <div>
-                                <div>
-                                    <span>Space Attack </span><br/>
-                                    A Javascript 2D game
-                               </div>
-                                <div>
-                                 <button>More details</button>
-                                </div>
-                              </div>
-                              </div>
-              <div class="gallery-item mix js" data-order="3"
-               style="background-image:url('assets/images/projects/website.png')"
-                routerLink="aboutwebsite">
-               <div>
-                  <div>
-                      <span>this.website();</span><br/>
-                      Built with Angular
-                 </div>
-                  <div>
-                   <button>More details</button>
-                  </div>
-                </div>
-              </div>
-              <div class="gallery-item mix android" 
-              data-order="3" style="background-image:url('assets/images/projects/chat.jpg')">
-                <div>
-                   <div>
-                       <span>Play Chat</span><br/>
-                       Android chat app with real-time games
-                  </div>
-                   <div>
-                    <button>In progress</button>
-                   </div>
-                 </div>
-                </div>
-              <div class="gallery-item mix c" data-order="3"
-              style="background-image:url('assets/images/projects/unix.png')"
-              routerLink="unixfs">
-                  <div>
-                      <div>
-                          <span>UNIX v6 File System</span><br/>
-                          File system setup and I/O
-                     </div>
-                      <div>
-                       <button>In progress</button>
-                      </div>
-                    </div>
-
-
               </div>
             </div>
 </div>

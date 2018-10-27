@@ -27,47 +27,44 @@ export const routerTransition = trigger('routerTransition', [
     
     ]),
 
-transition( '* => profile', [
-    q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
-    group([  q(' :enter', 
-    [
-        style({ opacity: 0 , transform: 'scale(3)'})
-    ], 
-    { optional: true }
-),
-
-
-q(':enter', 
-    [
-        style({ opacity: 0, transform: 'scale(3)' }),
-        animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'scale(1)'}))
-    ], 
-    { optional: true }
-)])
-
-]),
-
-
-transition( '* => about', [
-    q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
-    group([  q(' :enter', 
+    transition( '* => profile', [
+        q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
+        group([  q(' :enter', 
         [
-            style({ opacity: 0 , transform: 'scale(2)'})
+            style({ opacity: 0 , transform: 'translateY(-100%)'})
         ], 
         { optional: true }
     ),
-
-
+    
+    
     q(':enter', 
         [
-            style({ opacity: 0, transform: 'scale(2)' }),
-            animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'scale(1)'}))
+            style({ opacity: 0, transform: 'translateY(-100%)' }),
+            animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'translateY(0)'}))
         ], 
         { optional: true }
     )])
-
-
-]),
+    
+    ]),
+ transition( '* => about', [
+        q(':enter', style({ position: 'fixed', width:'100%' }),{ optional: true }),
+        group([  q(' :enter', 
+        [
+            style({ opacity: 0 , transform: 'translateX(100%)'})
+        ], 
+        { optional: true }
+    ),
+    
+    
+    q(':enter', 
+        [
+            style({ opacity: 0, transform: 'translateX(100%)' }),
+            animate('750ms ease-in-out', style({ opacity: 1 ,transform: 'translateX(0)'}))
+        ], 
+        { optional: true }
+    )])
+    
+    ]),
 
 
 transition( '* => articles', [

@@ -1,6 +1,8 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterContentInit, OnChanges, SimpleChange, SimpleChanges } from '@angular/core';
 import { default  as mixitup } from "mixitup"
 import { routerTransition } from '../router.transtions';
+import { ProjectService } from './project.service';
+import { Project } from './projects.model';
 @Component({
   templateUrl: './projects.component.html',
   animations: [ routerTransition ],
@@ -8,16 +10,29 @@ import { routerTransition } from '../router.transtions';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  projects:Project[];
+  imagesDir:string = "assets/images/projects/";
+  constructor(private projectService:ProjectService) { }
   @ViewChild("containerobj") containerRef:ElementRef;
   ngOnInit() {
-    var mixer = mixitup(".container-gallery",{
-      animation: {
-        easing: 'ease-in-out',
-        animateResizeContainer: false,
-        duration: 1000,
-      }});
+    
+      this.projectService.getProjects()
+      .subscribe((x:Project[]) => {this.projects = x;
+        setTimeout(()=>{
+
+          var mixer = mixitup(".container-gallery",{
+            animation: {
+              easing: 'ease-in-out',
+              animateResizeContainer: false,
+              duration: 900,
+            }});
+
+        },1000);
+      }
+      );
   }
+
+ 
 
   getState(outlet) {
   

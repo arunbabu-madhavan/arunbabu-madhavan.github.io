@@ -7,7 +7,7 @@
         align-items: flex-end;
         text-align: right;
         padding: 10pt;
-        padding-bottom: 5pt;
+        padding-bottom: 10pt;
         font-size: xx-large;
         color: #555;
         cursor: pointer;
@@ -39,7 +39,7 @@
 .info > div.desc > p {
     line-height: 22pt;
 }
-.info > div.desc > p >span{
+.info > div.desc > p > span{
     font-weight: bold;
 }
 
