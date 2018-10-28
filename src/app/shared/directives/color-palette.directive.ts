@@ -1,6 +1,6 @@
 import { Directive, OnInit, HostBinding } from '@angular/core';
 
-const colorClasses:string[] =["red","blue","green", "orange","purple"]
+const colorClasses:string[] = ["blueberry"]//,"blue","green", "orange","purple"]
 
 @Directive({
   selector: '[colorPalette]'

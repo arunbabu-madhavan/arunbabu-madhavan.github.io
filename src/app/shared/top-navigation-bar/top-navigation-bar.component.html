@@ -1,8 +1,8 @@
 <nav *ngIf="layout.showHeader">
 <div class="collapsable" [ngClass]="expand ? 'expand':''">
-  <div [routerLink]="['/home']" >Home</div>
-  <div [routerLink]="['/projects']" (click)="expand = false" [routerLinkActive]="['active']">Projects</div>
+  <div [routerLink]="['/home']" (click)="expand = false" >Home</div>
   <div [routerLink]="['/profile']" (click)="expand = false" [routerLinkActive]="['active']">Profile</div>
+  <div [routerLink]="['/projects']" (click)="expand = false" [routerLinkActive]="['active']">Projects</div>
   <div [routerLink]="['/articles']" (click)="expand = false" [routerLinkActive]="['active']">Articles</div>
   <div [routerLink]="['/about']" (click)="expand = false" [routerLinkActive]="['active']">About</div>
 </div>
