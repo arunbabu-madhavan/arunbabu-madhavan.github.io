@@ -4,12 +4,11 @@
     font-weight: 900;
     text-align: center;
 }
-p{
-    min-width: 400px;   
-}
+
 .skills-title > p::before{
     display: none;
 }
+
 progress{
     width: 180pt;
     height: 4pt;
@@ -54,7 +53,7 @@ progress{
 
 
 
-@media screen and (min-width: 480px)
+@media screen and (min-width: 460px)
 {
 
 .skills-title > p::before, 

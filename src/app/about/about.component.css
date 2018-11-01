@@ -7,7 +7,9 @@
 }
 
 .about-container > * {
-    margin: 30pt;
+    margin: 30pt 0pt;
+    align-self: center;
+   
 }
 app-experience,app-skills{
     display: flex;
@@ -29,13 +31,27 @@ app-skills{
 app-experience {
     padding: 0 10px;
 }
+.about-container > * {
+    margin: 30pt;
+}
+
+.about-container > * {
+    align-self: center;
+    }
 
 
 @media screen and (min-width: 1500px)
 {
     .about-container {
         flex-direction: row;
+        margin: 30pt;
+        
 }
+
+.about-container > * {
+    align-self: initial;
+    }
+
 
 }
 

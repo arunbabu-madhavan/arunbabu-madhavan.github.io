@@ -30,11 +30,11 @@
 }
 .dp-container p i {
     font-size: xx-large;
-    color: greenyellow;
+    color: #444;
 }
 .dp-container > div
 {
-   padding: 20pt;
+   margin-right: 25pt;
    align-self: center;
 
 }
@@ -73,7 +73,7 @@
         align-self: center;
     }
     .image-container > img{
-        width: auto;
+        width: 570px;
     }
     .dp-container {
         flex-direction: row;

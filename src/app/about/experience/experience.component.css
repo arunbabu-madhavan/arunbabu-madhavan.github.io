@@ -4,9 +4,7 @@
     font-weight: 900;
     text-align: center;
 }
-p{
-    min-width: 400px;   
-}
+
 .experience-title > p::before{
     display: none;
 }
@@ -69,7 +67,7 @@ p{
 .summary{
     line-height: 20pt;
 }
-@media screen and (min-width: 650px)
+@media screen and (min-width: 850px)
 {
 
 .experience-title > p::before, 

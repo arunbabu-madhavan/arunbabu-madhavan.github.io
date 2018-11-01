@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsModule } from './projects/projects.module';
 import { BioComponent } from './bio/bio.component';
 import { ArticleComponent } from './article/article.component';
+import { ArticleService } from './article/article.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { ArticleComponent } from './article/article.component';
     BrowserAnimationsModule,
     ProjectsModule
   ],
-  providers: [LayoutManager,DayNightService,DataService],
+  providers: [LayoutManager,DayNightService,DataService,ArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

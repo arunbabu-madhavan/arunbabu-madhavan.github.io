@@ -9,6 +9,8 @@ import { ColorPaletteDirective } from './directives/color-palette.directive';
 import { BorderHoverLedButtonComponent } from './buttons/border-hover-led-button/border-hover-led-button.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavigationArrowsComponent } from './navigation-arrows/navigation-arrows.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 @NgModule({
@@ -18,8 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   providers:[],
-  declarations: [RightPointButtonComponent,CarouselComponent,BorderHoverLedButtonComponent, TopNavigationBarComponent, DayNightColorDirective, FooterComponent,ColorPaletteDirective, CarouselComponent],
+  declarations: [RightPointButtonComponent,CarouselComponent,BorderHoverLedButtonComponent, TopNavigationBarComponent, DayNightColorDirective, FooterComponent,ColorPaletteDirective, CarouselComponent, NavigationArrowsComponent, CalendarComponent],
   bootstrap:[],
-  exports:[RightPointButtonComponent,CarouselComponent,TopNavigationBarComponent,DayNightColorDirective,FooterComponent,ColorPaletteDirective,BorderHoverLedButtonComponent]
+  exports:[RightPointButtonComponent,CarouselComponent,TopNavigationBarComponent,DayNightColorDirective,FooterComponent,ColorPaletteDirective,BorderHoverLedButtonComponent,NavigationArrowsComponent,CalendarComponent]
 })
 export class SharedModule { }

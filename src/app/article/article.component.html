@@ -2,53 +2,31 @@
  <div class="article-list-container">
   <div class="heading"><img src="assets/images/articles/cp.png">Recent Articles</div>
   <div class="article-list">
-    <div>
+    <div *ngFor="let article of articles"> 
       <div>
-        <div class="calendar">
-                <em>October</em>
-                <strong>2018</strong>
-                <span>24</span>
-        </div>
+      <app-calendar [calendarDate]="article.date"></app-calendar>
       </div>
       <div>
-         <div class="heading-link"><a href="https://www.codeproject.com/Articles/1264486/Infinte-Scrolling-Carousel-using-CSS" target="_blank">Infinte Scrolling Carousel using CSS</a></div> 
-         <div>Carousel using only CSS3 (without JavaScript and JS frameworks)</div>
-         <div>2.2K views | 65 downloads | 3 bookmarked </div>
+         <div class="heading-link"><a [href]="article.link" target="_blank">{{article.heading}}</a></div> 
+         <div>{{article.subheading}}</div>
+         <div>{{article.views}} views | {{article.downloads}} downloads | {{article.bookmarked}} bookmarked </div>
       </div>
     </div>
   </div>
+  <div class="heading-link" style="text-align:center" *ngIf="allArticles && articles && articles.length < allArticles.length"><a>Load more...</a></div>
   <div class="heading"><img src="assets/images/articles/bulb.png">Inspirations</div>
   <div class="article-list">
-    <div>
+    <div *ngFor="let inspiration of inspirations">
     <div></div>
     <div>
-    <div class="heading-link"><a href="https://johnresig.com/blog/write-code-every-day/" target="_blank">Write Code Every Day</a></div> 
-    <div><a href='https://johnresig.com'>John Resig</a> | Creator of jQuery</div>
+    <div class="heading-link"><a [href]="inspiration.link" target="_blank">{{inspiration.heading}}</a></div> 
+    <div><a [href]='inspiration.authorSite'>{{inspiration.author}}</a> | {{inspiration.aboutAuthor}}</div>
   </div>
   </div>
-  <div>
-      <div></div>
-      <div>
-      <div class="heading-link"><a href="https://dzone.com/articles/are-you-a-coder-or-a-developer" target="_blank">Are You a Coder or a Developer?</a></div> 
-      <div><a href='http://www.yegor256.com/'>Yegor Bugayenko</a> | CEO, Zerocracy</div>
-    </div>
-  </div>
-  <div>
-      <div></div>
-      <div>
-      <div class="heading-link"><a href="https://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp" target="_blank">SOLID Principles</a></div> 
-      <div><a href='https://twitter.com/shiv_koirala'>Shivprasad Koirala</a> | Microsoft MVP</div>
-    </div>
-  </div>
-<div>
-  <div></div>
-  <div>
-  <div class="heading-link"><a href="https://johnresig.com/blog/simple-javascript-inheritance/" target="_blank">Simple JS Inheritance</a></div> 
-  <div><a href='https://johnresig.com'>John Resig</a> | Creator of jQuery</div>
-</div>
-</div>
+
     
     
   </div>
  </div>
 </div>
+<app-navigation-arrows [prevPage]="['/projects']"  [nextPage]="['/about']" ></app-navigation-arrows>

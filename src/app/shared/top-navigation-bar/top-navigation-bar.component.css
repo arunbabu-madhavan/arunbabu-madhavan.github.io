@@ -4,7 +4,7 @@ nav{
     left:0;
     background-color: #1B242D;
     width: 100%;
-    height: 50px;
+   
     z-index: 10001;
     border-bottom: 3px solid #04C2C9;
     display: flex;
@@ -15,16 +15,21 @@ nav{
   
     color: #fff;
 }
+.collapsable a{
+    color: #fff;
+}
 .menu-links{
-   position: absolute;
-   height: 50px;
-   width: 50px;
-   right: 5vw;
-   cursor: pointer;
-  
+    position: fixed;
+    height: 45pt;
+    width: 45pt;
+    right: 5vw;
+    bottom: 2vh;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #335;
 }
 
-.collapsable > div:hover{
+.collapsable > div > div > a:hover{
     color: #E31B6D
 }
 
@@ -71,11 +76,20 @@ nav .menu-trigger.expand span::before{
     max-width: 1200px;
     width: 100%;
     position: absolute;
+    display: flex;
+    font-weight: 800;
+    flex-direction: row;
+    align-items: center;
     top: 50px;
-    background: #333;
+    background: #335;
     overflow: hidden;
     height: 0;
     transition: height .3s ease-out;
+}
+.collapsable > div{
+    display: flex;
+    flex-direction: column;
+
 }
 
 .collapsable div{
@@ -87,7 +101,16 @@ nav .menu-trigger.expand span::before{
     text-transform: uppercase;
 }
 .collapsable.expand{
-    height: 220px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #1B242D;
+}
+
+.collapsable div{
+    font-size: 20pt;
+    margin: 5pt 0pt;
 }
 .collapsable div:first-child {
     padding: 25px 20px 12px 20px;
@@ -103,9 +126,12 @@ nav .menu-trigger.expand span::before{
     height: initial;
     text-align: left;
 }
-
-.collapsable div.active{
+nav{
+    height: 50px;
+}
+.collapsable > div > div > a.active{
     color: #E31B6D;
+
 }
 .collapsable div{
 
@@ -113,11 +139,15 @@ nav .menu-trigger.expand span::before{
     padding: initial;
     font-size: initial;
     display: inline;
-    transition: color 0.25s ease-in-out;
+    /* transition: all 0.25s ease-in-out; */
 
 }
-.collapsable div:first-child {
+.collapsable > div > div:first-child {
     padding: 0;
     
+}
+.collapsable,.collapsable > div{
+    display: initial;
+  
 }
 }

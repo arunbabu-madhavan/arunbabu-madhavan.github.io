@@ -1,5 +1,5 @@
 .project-container{
-    margin-top:50px;
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,9 @@
 
   
 @media screen and (min-width: 850px) {
-
+  .project-container{
+    margin-top:50px;
+  }
   .filter-container >div{
       padding: 25px 50px;
   }    
@@ -91,7 +93,7 @@ a {
   @media screen and (min-width: 480px) {
 
     .project-container{
-
+      margin-top:50px;
       background-image: url('/assets/images/projects/skills_wall.png');
     
   }

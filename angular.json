@@ -21,6 +21,7 @@
             "assets": [
               "src/favicon.ico",
               "src/CNAME",
+              "src/sitemap.xml",
               "src/assets",
               "src/data"
             ],
