@@ -54,13 +54,16 @@
 {
     "ProjectId":"5",
     "ProjectName":"UNIX v6 File System",
-    "Description":"Unix V6 file system has a current limitation of 16MB on file size. Redesigned the file system to remove this limitation and support files upto 4GB size. Supported Commands: <b> initfs | q </b>",
+    "Description":"Unix V6 file system has a current limitation of 16MB on file size. Redesigned the file system to remove this limitation and support files upto 4GB size. Supported Commands: <b> initfs | ls | cd | cpin | cpout | mkdir | load | q </b>",
     "showLink":"false",
     "linkType":"0",
     "linkhref":"",
     "linkText":"",
     "carouselImages":["assets/images/projects/unixfs/1.PNG"
         ,"assets/images/projects/unixfs/2.PNG"
-       ,"assets/images/projects/unixfs/3.PNG"]
+       ,"assets/images/projects/unixfs/3.PNG"
+       ,"assets/images/projects/unixfs/4.PNG"
+       ,"assets/images/projects/unixfs/5.PNG"
+    ]
 }
 ]
