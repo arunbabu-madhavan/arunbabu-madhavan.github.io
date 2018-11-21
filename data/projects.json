@@ -56,7 +56,7 @@
 {
     "ProjectId":"6",
     "ProjectName":"Maze",
-    "ShortDesc":"Maze builder",
+    "ShortDesc":"Maze builder in Java",
     "InProgress":false,
     "ShowDetails":"true",
     "Categories":["c"],
