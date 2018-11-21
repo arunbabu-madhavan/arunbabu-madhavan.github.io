@@ -46,11 +46,23 @@
     "ProjectId":"5",
     "ProjectName":"UNIX v6 File System",
     "ShortDesc":"File system setup and I/O",
-    "InProgress":true,
+    "InProgress":false,
     "ShowDetails":"true",
     "Categories":["c"],
     "ImageFile":"unix.png"
 }
+,
+
+{
+    "ProjectId":"6",
+    "ProjectName":"Maze",
+    "ShortDesc":"Maze builder",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["c"],
+    "ImageFile":"maze.jpg"
+}
+
 
 
 
