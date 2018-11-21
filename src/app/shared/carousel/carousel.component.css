@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     height: 140px;
-    background-position: center;
+    background-position: unset;
     background-repeat: no-repeat;
     visibility: hidden;
     opacity: 0;
@@ -36,7 +36,7 @@
     position: relative;
 }
 .image-container > div{
-
+    background-position: center;
     height: 450px;
 }
 }
