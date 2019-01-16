@@ -2,7 +2,7 @@
     {
         "ProjectId":"1",
         "ProjectName":"Word Puzzle",
-        "Description":"A grid consisting of letters is checked against a dictionary of words. The user can input a value for the rows and columns of the grid and the program will create a grid of random characters. The program will read in a dictionary file (100,000 words) and use an algorithm to solve the word puzzle. The program also outputs the elapsed time.",
+        "Description":"A grid consisting of letters is checked against a dictionary of words. The user can input a value for the rows and columns of the grid and the program will create a grid of random characters. The program will read a dictionary file (100,000 words) and solve the word puzzle. The program outputs the elapsed time to measure the efficiency of the algorithm.",
         "showLink":"false",
         "linkType":"0",
         "linkhref":"",
@@ -15,7 +15,7 @@
 ,
 {
     "ProjectId":"2",
-    "ProjectName":"Word Puzzle",
+    "ProjectName":"Space Attack",
     "Description":"A simple browser-based 2D game using HTML5/CSS3. Designed the game objects using HTML5 canvas and sprites. The game engine was built from scratch using only Vanilla JavaScript. My love for JavaScript and front-end development started from here.",
     "showLink":"true",
     "linkType":"1",
@@ -78,5 +78,17 @@
         ,"assets/images/projects/maze/2.png"
        ,"assets/images/projects/maze/3.png"
     ]
+},
+{
+    "ProjectId":"7",
+    "ProjectName":"Tetris",
+    "Description":"A retro style tetris game developed using HTML5 canvas and JavaScript.",
+    "showLink":"true",
+    "linkType":"1",
+    "linkhref":"https://arunbabu-madhavan.github.io/tetris/",
+    "linkText":"Play Tetris",
+    "carouselImages":["assets/images/projects/tetris/a.png"
+        ,"assets/images/projects/tetris/b.png"
+       ,"assets/images/projects/tetris/c.png"]
 }
 ]
