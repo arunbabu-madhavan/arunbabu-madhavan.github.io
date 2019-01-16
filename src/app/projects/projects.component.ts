@@ -26,6 +26,7 @@ export class ProjectsComponent implements OnInit {
               animateResizeContainer: false,
               duration: 900,
             }});
+          //  mixer.sort('sort:asc')
 
         },1000);
       }

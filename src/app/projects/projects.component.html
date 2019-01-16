@@ -10,7 +10,7 @@
       <div class="container-gallery">
               <div class="gallery-item mix" [ngClass]="project.Categories.join(' ')" *ngFor="let project of projects"
               [ngStyle]="{'background-image': 'url('+ imagesDir + project.ImageFile +')'}"
-              [routerLink]="['project',project.ProjectId]">
+              [routerLink]="['project',project.ProjectId]"  >
               <div>
                   <div>
                       <span>{{project.ProjectName}}</span><br/>

@@ -43,6 +43,19 @@
 ,
 
 {
+    "ProjectId":"7",
+    "ProjectName":"Tertris",
+    "ShortDesc":"A Javascript 2D game",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["js" , "games"],
+    "ImageFile":"tetris.jpg"
+}
+
+
+,
+
+{
     "ProjectId":"5",
     "ProjectName":"UNIX v6 File System",
     "ShortDesc":"File system setup and I/O",
@@ -62,7 +75,6 @@
     "Categories":["c"],
     "ImageFile":"maze.jpg"
 }
-
 
 
 
