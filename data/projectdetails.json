@@ -82,7 +82,7 @@
 {
     "ProjectId":"7",
     "ProjectName":"Tetris",
-    "Description":"A retro style tetris game developed using HTML5 canvas and JavaScript.",
+    "Description":"A retro style tetris game developed using HTML5 canvas and JavaScript. It needs keyboard to play. Game may not open in mobile devices. Will integrate touch controls soon.",
     "showLink":"true",
     "linkType":"1",
     "linkhref":"https://arunbabu-madhavan.github.io/tetris/",
