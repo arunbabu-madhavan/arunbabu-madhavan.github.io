@@ -1,0 +1,94 @@
+[
+    {
+        "ProjectId":"1",
+        "ProjectName":"Word Puzzle",
+        "Description":"A grid consisting of letters is checked against a dictionary of words. The user can input a value for the rows and columns of the grid and the program will create a grid of random characters. The program will read a dictionary file (100,000 words) and solve the word puzzle. The program outputs the elapsed time to measure the efficiency of the algorithm.",
+        "showLink":"false",
+        "linkType":"0",
+        "linkhref":"",
+        "linkText":"",
+        "carouselImages":["assets/images/projects/wordpuzzle/1.PNG"
+            ,"assets/images/projects/wordpuzzle/2.PNG"
+           ,"assets/images/projects/wordpuzzle/3.PNG"
+          ,"assets/images/projects/wordpuzzle/4.PNG"]
+    }
+,
+{
+    "ProjectId":"2",
+    "ProjectName":"Space Attack",
+    "Description":"A simple browser-based 2D game using HTML5/CSS3. Designed the game objects using HTML5 canvas and sprites. The game engine was built from scratch using only Vanilla JavaScript. My love for JavaScript and front-end development started from here.",
+    "showLink":"true",
+    "linkType":"1",
+    "linkhref":"https://arunbabu-madhavan.github.io/SpaceAttack/",
+    "linkText":"Play Game!",
+    "carouselImages":["assets/images/projects/spaceattack/a.png"
+        ,"assets/images/projects/spaceattack/b.png"
+       ,"assets/images/projects/spaceattack/c.png"]
+}
+,
+{
+    "ProjectId":"3",
+    "ProjectName":"My Personal Portfolio",
+    "Description":"The same website you are browsing. Built using Angular 6, HTML5 and CSS3. Most of the animations and styles are designed and coded from scratch without using any external UI/UX frameworks. The designs are inspired from various articles and many other intriguing websites I visited which made me think, <b> How did he do that?!</b> I plan to constantly update the website and use it as my playground to learn and implement new web technologies.",
+    "showLink":"false",
+    "linkType":"0",
+    "linkhref":"",
+    "linkText":"",
+    "carouselImages":["assets/images/projects/website/1.png"
+        ,"assets/images/projects/website/2.png"
+       ,"assets/images/projects/website/3.png"
+      ,"assets/images/projects/website/4.png"]
+}
+
+,
+{
+    "ProjectId":"4",
+    "ProjectName":"Play Chat",
+    "Description":"An android chat application like WhatsApp, WeChat., where users will have an option to play games with each other. It is still in development.",
+    "showLink":"true",
+    "linkType":"2",
+    "linkhref":"",
+    "linkText":"Get App!",
+    "carouselImages":["assets/images/projects/playchat/underc.png"]
+},
+{
+    "ProjectId":"5",
+    "ProjectName":"UNIX v6 File System",
+    "Description":"Unix V6 file system has a current limitation of 16MB on file size. Redesigned and built a new file system from scratch with improved specifications to remove this limitation and support files upto 4GB size. Supported Commands: <b> initfs | ls | cd | cpin | cpout | mkdir | load | q </b>",
+    "showLink":"false",
+    "linkType":"0",
+    "linkhref":"",
+    "linkText":"",
+    "carouselImages":["assets/images/projects/unixfs/1.PNG"
+        ,"assets/images/projects/unixfs/2.PNG"
+       ,"assets/images/projects/unixfs/3.PNG"
+       ,"assets/images/projects/unixfs/4.PNG"
+       ,"assets/images/projects/unixfs/5.PNG"
+    ]
+},
+{
+    "ProjectId":"6",
+    "ProjectName":"Maze",
+    "Description":"It is a java program to generate and display a maze. The program accepts the number of rows and columns as input from the user and draws a character maze in the console. It also prints the solution for the maze.",
+    "showLink":"false",
+    "linkType":"0",
+    "linkhref":"",
+    "linkText":"",
+    "carouselImages":["assets/images/projects/maze/1.png"
+        ,"assets/images/projects/maze/2.png"
+       ,"assets/images/projects/maze/3.png"
+    ]
+},
+{
+    "ProjectId":"7",
+    "ProjectName":"Tetris",
+    "Description":"A retro style tetris game developed using HTML5 canvas and JavaScript.",
+    "showLink":"true",
+    "linkType":"1",
+    "linkhref":"https://arunbabu-madhavan.github.io/tetris/",
+    "linkText":"Play Tetris",
+    "carouselImages":["assets/images/projects/tetris/a.png"
+        ,"assets/images/projects/tetris/b.png"
+       ,"assets/images/projects/tetris/c.png"]
+}
+]

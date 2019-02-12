@@ -1,0 +1,58 @@
+[
+    {
+        "companyName":"The University of Texas at Dallas",
+        "location":"Dallas, TX",
+        "imagePath":"assets/images/experience/utd.jpg",
+        "positions":
+        [{
+            "designation":"Graduate Student | M.S in Computer Science (Interactive Computing)",
+            "summary":"After doing an objective analysis of my work and achievements, I realized I require an advanced education to widen my scope of knowledge in Computer Science. I joined UTD in Fall'18. The professors here are amazing. They care about what I learn and are very helpful. I actively involve in classes and group projects. Looking forward to develop aptitude and skills to build elegant, intelligent softwares that I can take pride on.",
+            "timePeriod":" since Fall'18"
+        }]
+    },
+    {
+            "companyName":"Deloitte",
+            "location":"Hyderabad, India",
+            "imagePath":"assets/images/experience/Deloitte_Logo.png",
+            "positions":
+            [{
+                "designation":"Technology Consultant",
+                "summary":"This is where I learnt how to deliver exceptional work while meeting milestones with professionalism. My technology team at Deloitte gets critical issues from the clients which require to be solved in least amount of time possible. I learnt to be quick at collobrating with my team, consult other teams if needed and come up with creative and effective solutions. The leadership is extremely supportive and I have recieved Applause and Outstanding awards for being flexible to support out mulitple applications.",
+                "timePeriod":" Jan 2016 - Jul 2018"
+            }]
+    },
+       {
+        "companyName":"Accenture (as Microsoft Vendor)",
+        "location":"Hyderabad, India",
+        "imagePath":"assets/images/experience/accy_micro.png",
+        "positions":
+        [{
+            "designation":"Software Engineering Senior Analyst",
+            "summary":"I got promoted in short term and took the leadership role. Lead a team of developers involved in building Windows 8.1 phone app. Gave training sessions on basics of PowerShell scripting and a hands-on session explicating how to build a Single Page Applications using AngularJS. I have also developed an automated environment builder using PowerShell to configure windows application servers.",
+            "timePeriod":" Dec 2014 - Jan 2016"
+        },
+        {
+            "designation":"Software Engineer",
+            "summary":"I was responsible for full stack web development projects where I architected solutions with appropriate design patterns, designed UX and developed website using ASP.NET MVC, Angular JS Web APIs, Entity framework along with SSIS packages to perfom ETL operations. I have also designed and built SOAP based WCF services for data exchanges between clients." ,
+            "timePeriod":" Jul 2013 - Nov 2014"
+        },
+        {
+            "designation":"Associate Software Engineer",
+            "summary":"This is when I started writing tidy, intelligent and professional code. The trust and support I recieved from my seniors and teammates were phenomenal. Their inspiration kindled my passion and shaped me into who I am today. I am grateful to my mentors for their time and wisdom." ,
+            "timePeriod":" Jul 2012 - Jun 2013"
+        }
+    ]
+   },
+   {
+    "companyName":"SASTRA University",
+    "location":"Thanjavur, India",
+    "imagePath":"assets/images/experience/sastra.jpg",
+    "positions":
+    [{
+        "designation":"Bachelor of Technology | (Mechatronics)",
+        "summary":"ROBOTS! ROBOTS! ROBOTS! The best 4 years of my life. I programmed and built robots to solve puzzles and complete mazes. Coding is my passion. I still remember the exhilaration I felt every time I saw my code run successfully which caused my robot's movements. As a team, my friends and I competed in Robotics coding events at Inter-college Tech festivals and won.",
+        "timePeriod":" Jan 2008  - May 2012"
+    }]
+    }
+
+  ]
