@@ -2,7 +2,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    height: 140px;
+    height: 455px;
     background-position: unset;
     background-repeat: no-repeat;
     visibility: hidden;
@@ -13,19 +13,19 @@
 
 
 .carousel-container{
-    height: 150px;
+    height: 455px;
   
     position: relative;
 }
 @media screen and (min-width: 420px) {
     .carousel-container{
-        height: 300px;
+        height: 455px;
       
         position: relative;
     }
     .image-container > div{
 
-        height: 290px;
+        height: 455px;
     }
     }
 

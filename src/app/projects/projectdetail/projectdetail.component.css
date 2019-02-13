@@ -1,6 +1,6 @@
 
 .info{
-    flex-grow: 2;
+    /* flex-grow: 2; */
 }
 .close{
         align-self: flex-end;
