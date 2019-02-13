@@ -94,7 +94,7 @@ a {
 
     .project-container{
       margin-top:50px;
-      background-image: url('/assets/images/projects/skills_wall.png');
+      background-image: url("/assets/images/projects/skills_wall.png");
     
   }
     a {
