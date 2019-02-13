@@ -16,7 +16,7 @@
         "InProgress":false,
         "ShowDetails":"true",
         "Categories":["js" , "games"],
-        "ImageFile":"space_attack.png"
+        "ImageFile":"space_attack.PNG"
     }
 ,
 
@@ -27,7 +27,7 @@
     "InProgress":false,
     "Categories":["js"],
     "ShowDetails":"true",
-    "ImageFile":"website.png"
+    "ImageFile":"website.PNG"
 }
 ,
 
