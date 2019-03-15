@@ -1,14 +1,18 @@
 [
-    {"name":"HTML5","confidenceLevel":90}
-    ,{"name":"CSS3","confidenceLevel":85}
-    ,{"name":"C#","confidenceLevel":85}
+    {"name":"C#","confidenceLevel":85}
     ,{"name":"ASP.NET MVC","confidenceLevel":80}
-    ,{"name":"Javascript","confidenceLevel":70}
+    ,{"name":"HTML5","confidenceLevel":90}
+    ,{"name":"CSS3","confidenceLevel":85}
+    ,{"name":"Javascript","confidenceLevel":85}
     ,{"name":"Angular","confidenceLevel":65}
-    ,{"name":"MSSQL","confidenceLevel":65}
-    ,{"name":"Java","confidenceLevel":65}
-    ,{"name":"Windows Presentation Foundation (WPF)","confidenceLevel":50}
-    ,{"name":"PowerShell","confidenceLevel":45}
+    ,{"name":"MSSQL","confidenceLevel":75}
+    ,{"name":"Java","confidenceLevel":70}
+    ,{"name":"Windows Presentation Foundation (WPF)","confidenceLevel":60}
+    ,{"name":"Windows Communication Foundation (WCF)","confidenceLevel":60}
+    ,{"name":"PowerShell","confidenceLevel":65}
+    ,{"name":"Android","confidenceLevel":45}
     ,{"name":"Python","confidenceLevel":40}
+    ,{"name":"OpenGL","confidenceLevel":55}
+   
 
 ]
