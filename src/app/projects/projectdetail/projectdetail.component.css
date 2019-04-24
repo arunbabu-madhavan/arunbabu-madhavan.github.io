@@ -6,14 +6,20 @@
         align-self: flex-end;
         align-items: flex-end;
         text-align: right;
-        padding: 10pt;
-        padding-bottom: 10pt;
         font-size: xx-large;
         color: #555;
         cursor: pointer;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
 }
 .close:hover{
     color: #aaa;
+}
+
+
+.project-popup video{
+    width:100%;
 }
 
 .info{

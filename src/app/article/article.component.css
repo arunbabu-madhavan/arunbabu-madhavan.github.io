@@ -14,13 +14,15 @@
     font-size: xx-large;
 }
 .heading > img{
-    height: 88pt;
+    height:  72pt;
+    margin-right: 48px;
 }
 .article-list {
    min-height: 150pt;
    margin-bottom: 50pt;
    display: flex;
-   flex-direction: column
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
 .article-list-container{

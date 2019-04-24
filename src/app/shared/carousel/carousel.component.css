@@ -10,6 +10,8 @@
     transition: all 750ms ease-in-out;
     background-color: black;
 }
+
+
 .carousel-container{
     height: 455px;
     position: relative;

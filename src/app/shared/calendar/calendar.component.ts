@@ -6,7 +6,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
-
+  @Input() articleSiteName:string;
   @Input() calendarDate:Date;
   constructor() { }
 

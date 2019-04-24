@@ -1,15 +1,19 @@
 <div class="article-container">
  <div class="article-list-container">
-  <div class="heading"><img src="assets/images/articles/cp.png">Recent Articles</div>
+  <div class="heading"><img src="assets/images/articles/article.png">Recent Articles</div>
   <div class="article-list">
     <div *ngFor="let article of articles"> 
       <div>
-      <app-calendar [calendarDate]="article.date"></app-calendar>
+      <app-calendar [calendarDate]="article.date" [articleSiteName]="article.site"></app-calendar>
       </div>
       <div>
          <div class="heading-link"><a [href]="article.link" target="_blank">{{article.heading}}</a></div> 
          <div>{{article.subheading}}</div>
-         <div>{{article.views}} views | {{article.downloads}} downloads | {{article.bookmarked}} bookmarked </div>
+         <div>{{article.views}} views 
+           <span *ngIf="article.downloads">| {{article.downloads}} downloads </span> 
+          <span *ngIf="article.bookmarked"> | {{article.bookmarked}} bookmarked </span>
+          <span *ngIf="article.likes">| {{article.likes}} likes </span>
+        </div>
       </div>
     </div>
   </div>
@@ -23,9 +27,6 @@
     <div><a [href]='inspiration.authorSite'>{{inspiration.author}}</a> | {{inspiration.aboutAuthor}}</div>
   </div>
   </div>
-
-    
-    
   </div>
  </div>
 </div>

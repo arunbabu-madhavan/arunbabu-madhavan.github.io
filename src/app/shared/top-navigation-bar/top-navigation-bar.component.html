@@ -2,8 +2,8 @@
 <div class="collapsable" [ngClass]="expand ? 'expand':''">
   <div>
   <div><a [routerLink]="['/home']" (click)="expand = false" > Home </a></div>
-  <div><a [routerLink]="['/projects']" (click)="expand = false" [routerLinkActive]="['active']">Projects</a></div>
   <div><a [routerLink]="['/profile']" (click)="expand = false" [routerLinkActive]="['active']">Profile</a></div>
+  <div><a [routerLink]="['/projects']" (click)="expand = false" [routerLinkActive]="['active']">Projects</a></div>
   <div><a [routerLink]="['/articles']" (click)="expand = false" [routerLinkActive]="['active']">Articles</a></div>
   <div><a [routerLink]="['/about']" (click)="expand = false" [routerLinkActive]="['active']">About</a></div>
 </div>

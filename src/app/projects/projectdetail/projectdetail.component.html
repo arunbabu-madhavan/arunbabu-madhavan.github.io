@@ -1,6 +1,10 @@
 <div class="project-popup" (click)="popupClicked($event)">
     <div *ngIf="project">
-        <app-carousel [images]="project.carouselImages"></app-carousel>
+        <app-carousel [images]="project.carouselImages" *ngIf="!project.videoLink">
+        </app-carousel>
+        <video controls *ngIf="project.videoLink">
+            <source [src]="project.videoLink" type="video/mp4">
+        </video>
         <div class="info">
             <div>
               {{project.ProjectName}}

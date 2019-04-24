@@ -13,14 +13,12 @@ export class ProjectService {
 
  getProjects():Observable<Project[]>{
   return  this.http.get<Project[]>('./data/projects.json');
-
 }
 
 getProjectDetail(id:number):Observable<ProjectDetail>{
   return  this.http.get<ProjectDetail[]>('./data/projectdetails.json')
-  .pipe(map(items => {return items.filter(item => item.ProjectId == id)[0]}));
+                .pipe(map(items => {return items.filter(item => item.ProjectId == id)[0]}));
 
 }
-
 
 }

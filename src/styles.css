@@ -112,6 +112,7 @@ a {
 .project-popup > div{
 	/* align-self: center; */
 	margin-top: 4vh;
+	position: relative;
 	/* height: 700px; */
 	width: 100vh;
 	z-index: 9999;
@@ -138,6 +139,7 @@ a {
 .project-popup > div{
 	/* align-self: center; */
 	margin-top: 4vh;
+	position: relative;
 	height: 700px;
 	width: 720px;
 	z-index: 9999;

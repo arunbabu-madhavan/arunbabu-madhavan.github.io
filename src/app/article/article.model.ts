@@ -6,10 +6,12 @@ export class Article{
         public  views:string,
          public downloads:string,
          public bookmarked:string,
+         public site:string,
          private datestr:string,
          public author:string,
          public aboutAuthor:string,
-         public authoreSite:string)
+         public authorSite:string,
+         public likes:string)
     {
         this.date = new Date(Date.parse(datestr));
     }

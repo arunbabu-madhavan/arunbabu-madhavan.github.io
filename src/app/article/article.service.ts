@@ -12,7 +12,7 @@ export class ArticleService {
   }
 
  getArticles():Observable<Article[]>{
-  return  this.http.get<Article[]>('./data/codeProjectArticles.json');
+  return  this.http.get<Article[]>('./data/myArticles.json');
 
 }
 

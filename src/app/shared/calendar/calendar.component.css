@@ -27,6 +27,12 @@
   border-bottom: 1px dashed #f37302;
   box-shadow: 0 2px 0 #fd9f1b;
 }
+.calendar.linkedin strong{
+  background-color:#0077B5;
+  border-color: #0077B5;
+  box-shadow:0 2px 0 #0077B5;
+}
+
 .calendar span
 {
   width: 100%;
@@ -50,4 +56,7 @@
   position: absolute;
   bottom: 0.3em;
   color: #fd9f1b;
+}
+.calendar.linkedin em{
+  color: #0077B5
 }

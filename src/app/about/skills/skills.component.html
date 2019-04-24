@@ -1,7 +1,7 @@
 <div class="skills-title"><p>Skills</p></div>
 <div>
 <div class="skill-item" *ngFor="let skill of skillList">
-  <div>{{skill.name}} <span>{{skill.confidenceLevel}}%</span></div>
+  <div>{{skill.name}} <span><!--{{skill.confidenceLevel}}--></span></div>
   <progress max="100" [value]="skill.confidenceLevel" colorPalette></progress> 
 
 </div>

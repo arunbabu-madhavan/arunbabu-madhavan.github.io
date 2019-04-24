@@ -13,7 +13,7 @@ export class DataService{
     }
 
    getExperience():Observable<Experience[]>{
-    return  this.http.get<Experience[]>('./data/experience.json');
+    return  this.http.get<Experience[]>('./data/experience.json?g=123');
 
   }
 

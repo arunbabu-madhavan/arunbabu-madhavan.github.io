@@ -19,7 +19,8 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit() {
     this.articleServiceInstance.getArticles().subscribe(x => {
-      x.sort((a,b)=>{return a.date < b.date ? 0 : -1});
+      x.sort((a,b)=>{
+        return a.date < b.date ? 0 : -1});
       this.allArticles = x;
       this.articles = this.allArticles.splice(0,MAX_RECENT_ARTICLES);
     });

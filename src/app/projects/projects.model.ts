@@ -15,5 +15,6 @@ export interface ProjectDetail{
     linkType:number;
     linkhref:string;
     linkText:string;
+    videoLink:string;
     carouselImages:string[];
 }
