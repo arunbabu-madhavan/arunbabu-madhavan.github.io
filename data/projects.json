@@ -33,11 +33,11 @@
 
 {
     "ProjectId":"4",
-    "ProjectName":"Play Chat",
-    "ShortDesc":"Android chat app with real-time games",
+    "ProjectName":"Breakout",
+    "ShortDesc":"Breakout game in Android",
     "InProgress":true,
     "Categories":["android"],
-    "ImageFile":"chat.jpg",
+    "ImageFile":"breakout.png",
     "ShowDetails":"true"
 }
 ,
@@ -75,5 +75,18 @@
     "Categories":["c"],
     "ImageFile":"maze.jpg"
 }
+
+,
+
+{
+    "ProjectId":"8",
+    "ProjectName":"Multithreaded Text search",
+    "ShortDesc":"Parallel text search of large files",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["cs"],
+    "ImageFile":"textsearch.png"
+}
+
 
 ]
