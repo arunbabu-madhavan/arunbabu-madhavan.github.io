@@ -48,8 +48,7 @@
     "linkType":"2",
     "linkhref":"#",
     "linkText":"Coming Soon on App Store!",
-    "videoLink":"assets/images/projects/breakout/bo(1)_SD 360p.mp4",
-    "carouselImages":["assets/images/projects/breakout/gameplay.gif"]
+    "videoLink":"assets/images/projects/breakout/bo(1)_SD_360p.mp4"
 },
 {
     "ProjectId":"5",
@@ -102,6 +101,28 @@
     "carouselImages":["assets/images/projects/textsearch/1.png"
         ,"assets/images/projects/textsearch/2.png"  
        ,"assets/images/projects/textsearch/3.png"]
+},
+{
+    "ProjectId":"9",
+    "ProjectName":"Slice Based Volume Rendering",
+    "Description":"A visualization application written in OpenGL to load and process CT scan files. A complete interactive dashboard is developed with numerous controls to manipulate the loaded .raw file. The 3D data from MRI and CT scan files are read and view aligned slicing is done. A transfer function for shading the rendered image based upon the intensity can be constructed dynamically using sliders. ",
+    "showLink":"false",
+    "linkType":"2",
+    "linkhref":"#",
+    "linkText":"",
+    "videoLink":"assets/images/projects/slicebasedvolume/volume_rendering_360p.mp4"
+},
+{
+    "ProjectId":"10",
+    "ProjectName":"Memory Blocks",
+    "Description":"A simple fun filled memory blocks game with Pokémon. Designed using CSS3 and ES6 (Javascript).",
+    "showLink":"true",
+    "linkType":"1",
+    "linkhref":"http://arunbabumadhavan.com/memory-game/",
+    "linkText":"Play",
+    "carouselImages":["assets/images/projects/memorygame/1.png"
+        ,"assets/images/projects/memorygame/2.png"
+       ,"assets/images/projects/memorygame/3.png"]
 }
 
 

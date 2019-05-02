@@ -4,7 +4,7 @@
         "ProjectName":"Word Puzzle",
         "ShortDesc":"A word puzzle solver in Java",
         "InProgress":false,
-        "Categories":["c"],
+        "Categories":["java"],
         "ShowDetails":"true",
         "ImageFile":"word.png"
     }
@@ -33,12 +33,24 @@
 
 {
     "ProjectId":"4",
-    "ProjectName":"Breakout",
+    "ProjectName":"Super Breakout",
     "ShortDesc":"Breakout game in Android",
     "InProgress":true,
-    "Categories":["android"],
+    "Categories":["android", "games","java"],
     "ImageFile":"breakout.png",
     "ShowDetails":"true"
+}
+,
+
+
+{
+    "ProjectId":"9",
+    "ProjectName":"3D Volume Rendering",
+    "ShortDesc":"Slice based volume rendering",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["c"],
+    "ImageFile":"head_volume.png"
 }
 ,
 
@@ -52,18 +64,18 @@
     "ImageFile":"tetris.jpg"
 }
 
-
 ,
 
 {
-    "ProjectId":"5",
-    "ProjectName":"UNIX v6 File System",
-    "ShortDesc":"File system setup and I/O",
+    "ProjectId":"10",
+    "ProjectName":"Memory Tiles",
+    "ShortDesc":"A Javascript/CSS3 game",
     "InProgress":false,
     "ShowDetails":"true",
-    "Categories":["c"],
-    "ImageFile":"unix.png"
+    "Categories":["js","games"],
+    "ImageFile":"memorygame.png"
 }
+
 ,
 
 {
@@ -72,8 +84,8 @@
     "ShortDesc":"Maze builder in Java",
     "InProgress":false,
     "ShowDetails":"true",
-    "Categories":["c"],
-    "ImageFile":"maze.jpg"
+    "Categories":["java"],
+    "ImageFile":"maze.png"
 }
 
 ,
@@ -88,5 +100,17 @@
     "ImageFile":"textsearch.png"
 }
 
+,
+
+
+{
+    "ProjectId":"5",
+    "ProjectName":"UNIX v6 File System",
+    "ShortDesc":"File system setup and I/O",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["c"],
+    "ImageFile":"unix.png"
+}
 
 ]

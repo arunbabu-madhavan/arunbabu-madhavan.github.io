@@ -89,13 +89,13 @@ nav .menu-trigger.expand span::before{
 .collapsable > div{
     display: flex;
     flex-direction: column;
-
 }
 
 .collapsable div{
     font-family: 'Roboto';
     padding: 12px 20px;
     font-size: 11pt;
+    
     cursor: pointer;
     transition: color .5s;
     text-transform: uppercase;
@@ -111,6 +111,7 @@ nav .menu-trigger.expand span::before{
 .collapsable div{
     font-size: 20pt;
     margin: 5pt 0pt;
+    margin:0 28px;
 }
 .collapsable div:first-child {
     padding: 25px 20px 12px 20px;
@@ -135,7 +136,7 @@ nav{
 }
 .collapsable div{
 
-    margin: 0 40px;
+    margin: 0 28px;
     padding: initial;
     font-size: initial;
     display: inline;

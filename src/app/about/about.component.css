@@ -22,7 +22,7 @@ app-experience,app-skills{
     font-family: 'Roboto','sans-serif';
 }
 app-skills{
-    position: sticky;
+    /* position: sticky; */
     top: 50px;
 }
 

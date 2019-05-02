@@ -28,12 +28,12 @@
         "positions":
         [{
             "designation":"Software Engineering Senior Analyst",
-            "summary":"I got promoted in short term and took the leadership role. Lead a team of developers involved in building Windows 8.1 phone app. Gave training sessions on basics of PowerShell scripting and a hands-on session explicating how to build a Single Page Applications using AngularJS. I have also developed an automated environment builder using PowerShell to configure windows application servers.",
+            "summary":"I got promoted in short term and took the leadership role. Lead a team of developers involved in building Windows 8.1 phone app. Gave training sessions on basics of PowerShell scripting and a hands-on session explicating how to build a Single Page Applications using AngularJS. I have developed an automated environment builder using PowerShell to configure windows application servers.",
             "timePeriod":" Dec 2014 - Jan 2016"
         },
         {
             "designation":"Software Engineer",
-            "summary":"I was responsible for full stack web development projects where I architected solutions with appropriate design patterns, designed UX and developed website using ASP.NET MVC, Angular JS Web APIs, Entity framework along with SSIS packages to perfom ETL operations. I have also designed and built SOAP based WCF services for data exchanges between clients." ,
+            "summary":"I was responsible for full stack web development projects where I architected solutions with appropriate design patterns, designed UX and developed website using ASP.NET MVC, Angular JS Web APIs, Entity framework along with SSIS packages to perfom ETL operations. I have designed and built SOAP based WCF services for data exchanges between clients." ,
             "timePeriod":" Jul 2013 - Nov 2014"
         },
         {
