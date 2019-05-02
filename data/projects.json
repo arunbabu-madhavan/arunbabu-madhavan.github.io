@@ -4,7 +4,7 @@
         "ProjectName":"Word Puzzle",
         "ShortDesc":"A word puzzle solver in Java",
         "InProgress":false,
-        "Categories":["c"],
+        "Categories":["java"],
         "ShowDetails":"true",
         "ImageFile":"word.png"
     }
@@ -84,7 +84,7 @@
     "ShortDesc":"Maze builder in Java",
     "InProgress":false,
     "ShowDetails":"true",
-    "Categories":["c"],
+    "Categories":["java"],
     "ImageFile":"maze.png"
 }
 
