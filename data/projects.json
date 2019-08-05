@@ -1,18 +1,19 @@
 [
 
+    {
+        "ProjectId":"6",
+        "ProjectName":"Maze",
+        "ShortDesc":"Maze builder in Java",
+        "InProgress":false,
+        "ShowDetails":"true",
+        "Categories":["java"],
+        "ImageFile":"maze.png"
+    }
     
+    ,
 
 
 
-{
-    "ProjectId":"11",
-    "ProjectName":"Toy Store",
-    "ShortDesc":"Online e-commerce website",
-    "InProgress":false,
-    "ShowDetails":"true",
-    "Categories":["js"],
-    "ImageFile":"toystore.png"
-},
     {
         "ProjectId":"2",
         "ProjectName":"Space Attack",
@@ -47,16 +48,7 @@
 ,
 
 
-{
-    "ProjectId":"9",
-    "ProjectName":"3D Volume Rendering",
-    "ShortDesc":"Slice based volume rendering",
-    "InProgress":false,
-    "ShowDetails":"true",
-    "Categories":["c"],
-    "ImageFile":"head_volume.png"
-}
-,
+
 
 {
     "ProjectId":"7",
@@ -66,9 +58,29 @@
     "ShowDetails":"true",
     "Categories":["js" , "games"],
     "ImageFile":"tetris.jpg"
+},
+
+{
+    "ProjectId":"11",
+    "ProjectName":"Toy Store",
+    "ShortDesc":"Online e-commerce website",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["js"],
+    "ImageFile":"toystore.png"
 }
 
 ,
+{
+    "ProjectId":"9",
+    "ProjectName":"3D Volume Rendering",
+    "ShortDesc":"Slice based volume rendering",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["c"],
+    "ImageFile":"head_volume.png"
+}
+,   
 
 {
     "ProjectId":"10",
@@ -82,17 +94,6 @@
 
 ,
 
-{
-    "ProjectId":"6",
-    "ProjectName":"Maze",
-    "ShortDesc":"Maze builder in Java",
-    "InProgress":false,
-    "ShowDetails":"true",
-    "Categories":["java"],
-    "ImageFile":"maze.png"
-}
-
-,
 
 {
     "ProjectId":"8",
