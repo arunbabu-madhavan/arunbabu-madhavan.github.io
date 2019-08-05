@@ -46,7 +46,7 @@
     "Description":"A variation of a popular Atari game <b>'Breakout'</b> developed for android phones. The basic game is already in working condition. Features like 2 player mode, levels and power ups are in progress.",
     "showLink":"true",
     "linkType":"2",
-    "linkhref":"#",
+    "linkhref":"",
     "linkText":"Coming Soon on App Store!",
     "videoLink":"assets/images/projects/breakout/bo(1)_SD_360p.mp4"
 },
@@ -55,9 +55,9 @@
     "ProjectName":"UNIX v6 File System",
     "Description":"Unix V6 file system has a current limitation of 16MB on file size. Redesigned and built a new file system from scratch with improved specifications to remove this limitation and support files upto 4GB size. Supported Commands: <b> initfs | ls | cd | cpin | cpout | mkdir | load | q </b>",
     "showLink":"false",
-    "linkType":"0",
+    "linkType":"2",
     "linkhref":"",
-    "linkText":"",
+    "linkText":"View project on Github",
     "carouselImages":["assets/images/projects/unixfs/1.PNG"
         ,"assets/images/projects/unixfs/2.PNG"
        ,"assets/images/projects/unixfs/3.PNG"
@@ -123,6 +123,20 @@
     "carouselImages":["assets/images/projects/memorygame/1.png"
         ,"assets/images/projects/memorygame/2.png"
        ,"assets/images/projects/memorygame/3.png"]
+}
+,
+{
+    "ProjectId":"11",
+    "ProjectName":"Toy Store - E-commerce website",
+    "Description":"A sophisticated e-commerce website developed as part of my final project in Web Programming languages class. The responsive website was built with <i>php</i>, jQuery and mySQL. The website features a full text indexed search of products and responsive web design. It also has an admin module to control the product inventory and perform content management for the site. ",
+    "showLink":"true",
+    "linkType":"2",
+    "linkhref":"https://github.com/arunbabu-madhavan/toy-store",
+    "linkText":"View project on Github",
+    "carouselImages":["assets/images/projects/toystore/2.png"
+        ,"assets/images/projects/toystore/3.png"
+       ,"assets/images/projects/toystore/4.png"
+       ,"assets/images/projects/toystore/5.png"]
 }
 
 

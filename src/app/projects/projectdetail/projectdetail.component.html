@@ -15,7 +15,9 @@
             <div class="links" *ngIf="project.showLink" [ngSwitch]="project.linkType"> 
               <border-hover-led-button
                *ngSwitchCase="1"  [width]=178 [link]="project.linkhref">
-               {{project.linkText}}</border-hover-led-button></div>
+               {{project.linkText}}</border-hover-led-button>
+               <a *ngSwitchCase="2"  [href]="project.linkhref">
+               {{project.linkText}}</a></div>
         </div>
         <div class="close" routerLink="/projects"><i  class="fa fa-times"></i></div>
     </div>
