@@ -124,6 +124,19 @@
         ,"assets/images/projects/memorygame/2.png"
        ,"assets/images/projects/memorygame/3.png"]
 }
+,
+{
+    "ProjectId":"11",
+    "ProjectName":"Toy Store - E-commerce website",
+    "Description":"A sophisticated e-commerce website developed as part of my final project in Web Programming languages class. The responsive website was built with <i>php</i>, jQuery and mySQL. The website features a full text indexed search of products and responsive web design. It also has an admin module to control the product inventory and perform content management for the site. ",
+    "showLink":"true",
+    "linkType":"2",
+    "linkhref":"https://github.com/arunbabu-madhavan/toy-store",
+    "linkText":"View project on Github",
+    "carouselImages":["assets/images/projects/memorygame/1.png"
+        ,"assets/images/projects/memorygame/2.png"
+       ,"assets/images/projects/memorygame/3.png"]
+}
 
 
 ]

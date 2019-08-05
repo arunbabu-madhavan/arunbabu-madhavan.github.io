@@ -1,14 +1,18 @@
 [
-   {
-        "ProjectId":"1",
-        "ProjectName":"Word Puzzle",
-        "ShortDesc":"A word puzzle solver in Java",
-        "InProgress":false,
-        "Categories":["java"],
-        "ShowDetails":"true",
-        "ImageFile":"word.png"
-    }
-,
+
+    
+
+
+
+{
+    "ProjectId":"11",
+    "ProjectName":"Toy Store",
+    "ShortDesc":"Online e-commerce website",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["js"],
+    "ImageFile":"toystore.png"
+},
     {
         "ProjectId":"2",
         "ProjectName":"Space Attack",
@@ -100,8 +104,8 @@
     "ImageFile":"textsearch.png"
 }
 
-,
 
+,
 
 {
     "ProjectId":"5",
@@ -112,5 +116,16 @@
     "Categories":["c"],
     "ImageFile":"unix.png"
 }
+,
+{
+    "ProjectId":"1",
+    "ProjectName":"Word Puzzle",
+    "ShortDesc":"A word puzzle solver in Java",
+    "InProgress":false,
+    "Categories":["java"],
+    "ShowDetails":"true",
+    "ImageFile":"word.png"
+}
+
 
 ]
