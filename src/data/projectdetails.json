@@ -138,6 +138,17 @@
        ,"assets/images/projects/toystore/4.png"
        ,"assets/images/projects/toystore/5.png"]
 }
+,
+{
+    "ProjectId":"12",
+    "ProjectName":"Run Panda Run - 2D Platformer Game",
+    "Description":"A 2D game similar to <i>Dangerous Dave</i>. The main character of the game is a panda cub. The game consists of two levels, four different enemies and various powerups including a grown panda. Developed the entire game engine from ground up using plain JavaScript. The animation, collision detection and interaction are developed in modules using ES6 (JavaScript). The art works and assets are inspired from OpenGameArt.org ",
+    "showLink":"true",
+    "linkType":"1",
+    "linkhref":"http://arunbabumadhavan.com/run-panda-run/",
+    "linkText":"Play",
+    "videoLink":"assets/images/projects/runpandarun/runpandarun.mp4"
+}
 
 
 ]

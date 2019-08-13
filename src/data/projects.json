@@ -58,27 +58,6 @@
     "ShowDetails":"true",
     "Categories":["js" , "games"],
     "ImageFile":"tetris.jpg"
-},
-
-{
-    "ProjectId":"11",
-    "ProjectName":"Toy Store",
-    "ShortDesc":"Online e-commerce website",
-    "InProgress":false,
-    "ShowDetails":"true",
-    "Categories":["js"],
-    "ImageFile":"toystore.png"
-}
-
-,
-{
-    "ProjectId":"9",
-    "ProjectName":"3D Volume Rendering",
-    "ShortDesc":"Slice based volume rendering",
-    "InProgress":false,
-    "ShowDetails":"true",
-    "Categories":["c"],
-    "ImageFile":"head_volume.png"
 }
 ,   
 
@@ -90,6 +69,36 @@
     "ShowDetails":"true",
     "Categories":["js","games"],
     "ImageFile":"memorygame.png"
+}
+,
+{
+    "ProjectId":"12",
+    "ProjectName":"Run Panda Run",
+    "ShortDesc":"2D platformer game",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["js","games"],
+    "ImageFile":"runpanda.png"
+},
+{
+    "ProjectId":"9",
+    "ProjectName":"3D Volume Rendering",
+    "ShortDesc":"Slice based volume rendering",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["c"],
+    "ImageFile":"head_volume.png"
+}
+
+,
+{
+    "ProjectId":"11",
+    "ProjectName":"Toy Store",
+    "ShortDesc":"Online e-commerce website",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["js"],
+    "ImageFile":"toystore.png"
 }
 
 ,
