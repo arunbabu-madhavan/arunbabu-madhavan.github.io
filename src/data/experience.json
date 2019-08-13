@@ -28,7 +28,7 @@
         "positions":
         [{
             "designation":"Software Engineering Senior Analyst",
-            "summary":"I got promoted in short term and took the leadership role. Lead a team of developers involved in building Windows 8.1 phone app. Gave training sessions on basics of PowerShell scripting and a hands-on session explicating how to build a Single Page Applications using AngularJS. I have developed an automated environment builder using PowerShell to configure windows application servers.",
+            "summary":"I got promoted in short term and took a managerial role. Lead a team of developers involved in building Windows 8.1 phone app. Gave training sessions on basics of PowerShell scripting and a hands-on session explicating how to build a Single Page Applications using AngularJS. I have developed an automated environment builder using PowerShell to configure windows application servers.",
             "timePeriod":" Dec 2014 - Jan 2016"
         },
         {
@@ -50,7 +50,7 @@
     "positions":
     [{
         "designation":"Bachelor of Technology | (Mechatronics)",
-        "summary":"ROBOTS! ROBOTS! ROBOTS! The best 4 years of my life. I programmed and built robots to solve puzzles and complete mazes. Coding is my passion. I still remember the exhilaration I felt every time I saw my code run successfully which caused my robot's movements. As a team, my friends and I competed in Robotics coding events at Inter-college Tech festivals and won.",
+        "summary":"ROBOTS! ROBOTS! ROBOTS! The best 4 years of my life. I programmed and built robots to solve puzzles and complete mazes. Coding became my passion. I still remember the exhilaration I felt every time I saw my code execute successfully causing my robot's movements. As a team, my friends and I competed in Robotics coding events at Inter-college Tech festivals and won.",
         "timePeriod":" Jan 2008  - May 2012"
     }]
     }

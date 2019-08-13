@@ -80,6 +80,7 @@
     "Categories":["js","games"],
     "ImageFile":"runpanda.png"
 },
+
 {
     "ProjectId":"9",
     "ProjectName":"3D Volume Rendering",
@@ -103,6 +104,15 @@
 
 ,
 
+{
+    "ProjectId":"13",
+    "ProjectName":"SQVeryLite",
+    "ShortDesc":"An ultra light implementation of mySQL",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["java"],
+    "ImageFile":"sqverylite.png"
+},
 
 {
     "ProjectId":"8",
