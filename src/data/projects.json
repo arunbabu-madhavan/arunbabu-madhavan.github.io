@@ -49,17 +49,16 @@
 
 
 
-
 {
-    "ProjectId":"7",
-    "ProjectName":"Tertris",
-    "ShortDesc":"A Javascript 2D game",
+    "ProjectId":"13",
+    "ProjectName":"SQVeryLite",
+    "ShortDesc":"An ultra light implementation of mySQL",
     "InProgress":false,
     "ShowDetails":"true",
-    "Categories":["js" , "games"],
-    "ImageFile":"tetris.jpg"
-}
-,   
+    "Categories":["java"],
+    "ImageFile":"sqverylite.png"
+},
+
 
 {
     "ProjectId":"10",
@@ -105,14 +104,15 @@
 ,
 
 {
-    "ProjectId":"13",
-    "ProjectName":"SQVeryLite",
-    "ShortDesc":"An ultra light implementation of mySQL",
+    "ProjectId":"7",
+    "ProjectName":"Tertris",
+    "ShortDesc":"A Javascript 2D game",
     "InProgress":false,
     "ShowDetails":"true",
-    "Categories":["java"],
-    "ImageFile":"sqverylite.png"
-},
+    "Categories":["js" , "games"],
+    "ImageFile":"tetris.jpg"
+}
+,   
 
 {
     "ProjectId":"8",

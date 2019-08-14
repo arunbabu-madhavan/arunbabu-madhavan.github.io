@@ -6,12 +6,9 @@
      width: 100%;    
     justify-content: center;
     box-sizing: border-box;
-    max-width: calc(100vw - 600px);
     display: flex;
- 
    }
- 
- 
+
    
 .filter-container{
     display: flex;
