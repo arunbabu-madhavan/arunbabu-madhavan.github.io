@@ -42,7 +42,7 @@
 ,
 {
     "ProjectId":"4",
-    "ProjectName":"Breakout",
+    "ProjectName":"Super Breakout",
     "Description":"A variation of a popular Atari game <b>'Breakout'</b> developed for android phones. The basic game is already in working condition. Features like 2 player mode, levels and power ups are in progress.",
     "showLink":"true",
     "linkType":"2",
@@ -114,11 +114,11 @@
 },
 {
     "ProjectId":"10",
-    "ProjectName":"Memory Blocks",
+    "ProjectName":"Memory Tiles",
     "Description":"A simple fun filled memory blocks game with Pokémon. Designed using CSS3 and ES6 (Javascript).",
     "showLink":"true",
     "linkType":"1",
-    "linkhref":"http://arunbabumadhavan.com/memory-game/",
+    "linkhref":"ch",
     "linkText":"Play",
     "carouselImages":["assets/images/projects/memorygame/1.png"
         ,"assets/images/projects/memorygame/2.png"
@@ -141,7 +141,7 @@
 ,
 {
     "ProjectId":"12",
-    "ProjectName":"Run Panda Run - 2D Platformer Game",
+    "ProjectName":"Run Panda Run - 2D Platform Game",
     "Description":"A 2D game similar to <i>Dangerous Dave</i>. The main character of the game is a panda cub. The game consists of two levels, four different enemies and various powerups including a grown panda. Developed the entire game engine from ground up using plain JavaScript. The animation, collision detection and interaction are developed in modules using ES6 (JavaScript). The art works and assets are inspired from OpenGameArt.org ",
     "showLink":"true",
     "linkType":"1",
