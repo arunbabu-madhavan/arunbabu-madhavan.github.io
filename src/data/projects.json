@@ -105,7 +105,7 @@
 
 {
     "ProjectId":"7",
-    "ProjectName":"Tertris",
+    "ProjectName":"Tetris",
     "ShortDesc":"A Javascript 2D game",
     "InProgress":false,
     "ShowDetails":"true",
