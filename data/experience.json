@@ -1,19 +1,29 @@
 [
     {
+        "companyName":"Ernst & Young",
+        "location":"Dallas, TX",
+        "imagePath":"assets/images/experience/EY.jpg",
+        "positions":
+        [{
+            "designation":"Senior Developer",
+            "summary":"Recently joined as Senior Developer at EY. I am excited to be a part of the team. I’m so looking forward to working with EY and getting to know everyone better and develop my network.",
+            "timePeriod":" since Jul 2020"
+        }]
+    },{
         "companyName":"The University of Texas at Dallas",
         "location":"Dallas, TX",
         "imagePath":"assets/images/experience/utd.jpg",
         "positions":
         [{
             "designation":"Graduate Student | M.S in Computer Science (Interactive Computing)",
-            "summary":"After doing an objective analysis of my work and achievements, I realized I require an advanced education to widen my scope of knowledge in Computer Science. I joined UTD in Fall'18. The professors here are amazing. They care about what I learn and are very helpful. I actively involve in classes and group projects. Looking forward to develop aptitude and skills to build elegant, intelligent softwares that I can take pride on.",
-            "timePeriod":" since Fall'18"
+            "summary":"After doing an objective analysis of my work and achievements, I realized I require an advanced education to widen my scope of knowledge in Computer Science. I joined UTD in Fall'18. The professors here are amazing. They care about what I learn and are very helpful. I actively involved in classes and group projects. Developed aptitude and skills to build elegant, intelligent softwares that I can take pride on. Specialized in animation, gaming and interactive UI/UX development",
+            "timePeriod":" Aug 2018 - May 2020"
         }]
     },
     {
             "companyName":"Deloitte",
             "location":"Hyderabad, India",
-            "imagePath":"assets/images/experience/Deloitte_Logo.png",
+            "imagePath":"assets/images/experience/Deloitte.jpg",
             "positions":
             [{
                 "designation":"Technology Consultant",
@@ -24,7 +34,7 @@
        {
         "companyName":"Accenture (as Microsoft Vendor)",
         "location":"Hyderabad, India",
-        "imagePath":"assets/images/experience/accy_micro.png",
+        "imagePath":"assets/images/experience/accmic.png",
         "positions":
         [{
             "designation":"Software Engineering Senior Analyst",
@@ -46,7 +56,7 @@
    {
     "companyName":"SASTRA University",
     "location":"Thanjavur, India",
-    "imagePath":"assets/images/experience/sastra.jpg",
+    "imagePath":"assets/images/experience/sas.jpg",
     "positions":
     [{
         "designation":"Bachelor of Technology | (Mechatronics)",
