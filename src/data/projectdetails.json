@@ -118,7 +118,7 @@
     "Description":"A simple fun filled memory blocks game with Pokémon. Designed using CSS3 and ES6 (Javascript).",
     "showLink":"true",
     "linkType":"1",
-    "linkhref":"ch",
+    "linkhref":"http://arunbabumadhavan.com/memory-game/",
     "linkText":"Play",
     "carouselImages":["assets/images/projects/memorygame/1.png"
         ,"assets/images/projects/memorygame/2.png"
