@@ -8,21 +8,7 @@
         "authorSite":"https://johnresig.com"
     }
 ,
-    {
-        "heading":"Are You a Coder or a Developer?",
-        "author":"Yegor Bugayenko",
-        "link":"https://dzone.com/articles/are-you-a-coder-or-a-developer",
-        "aboutAuthor":"CEO, Zerocracy",
-        "authorSite":"http://www.yegor256.com/"
-    }
-,   {
-        "heading":"SOLID Principles",
-        "author":"Shivprasad Koirala",
-        "link":"https://www.codeproject.com/Articles/703634/SOLID-architecture-principles-using-simple-Csharp",
-        "aboutAuthor":"Microsoft MVP",
-        "authorSite":"https://twitter.com/shiv_koirala"
-    }
-,   {
+   {
         "heading":"Simple JS Inheritance",
         "author":"John Resig",
         "link":"https://johnresig.com/blog/simple-javascript-inheritance/",
