@@ -25,6 +25,20 @@
         ,"assets/images/projects/spaceattack/b.png"
        ,"assets/images/projects/spaceattack/c.png"]
 }
+// ,
+// {
+//     "ProjectId":"3",
+//     "ProjectName":"My Personal Portfolio",
+//     "Description":"The same website you are browsing. Built using Angular 6, HTML5 and CSS3. Most of the animations and styles are designed and coded from scratch without using any external UI/UX frameworks. The designs are inspired from various articles and many other intriguing websites I visited which made me think, <b> How did he do that?!</b> I plan to constantly update the website and use it as my playground to learn and implement new web technologies.",
+//     "showLink":"false",
+//     "linkType":"0",
+//     "linkhref":"",
+//     "linkText":"",
+//     "carouselImages":["assets/images/projects/website/1.png"
+//         ,"assets/images/projects/website/2.png"
+//        ,"assets/images/projects/website/3.png"
+//       ,"assets/images/projects/website/4.png"]
+// }
 ,
 {
     "ProjectId":"4",
@@ -76,6 +90,18 @@
         ,"assets/images/projects/tetris/b.png"
        ,"assets/images/projects/tetris/c.png"]
 },
+// {
+//     "ProjectId":"8",
+//     "ProjectName":"Multithreaded Text Search",
+//     "Description":"A parallel text search application developed using windows forms (C#) which quickly searches for a given text in a selected file. The search progress is shown in the status bar. The list view is populated as soon an occurence of the search term is found.",
+//     "showLink":"false",
+//     "linkType":"0",
+//     "linkhref":"",
+//     "linkText":"",
+//     "carouselImages":["assets/images/projects/textsearch/1.png"
+//         ,"assets/images/projects/textsearch/2.png"  
+//        ,"assets/images/projects/textsearch/3.png"]
+// },
 {
     "ProjectId":"9",
     "ProjectName":"Slice Based Volume Rendering",

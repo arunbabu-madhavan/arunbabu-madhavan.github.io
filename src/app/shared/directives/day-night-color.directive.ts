@@ -2,10 +2,12 @@ import { Directive, Renderer2, ElementRef, OnInit, HostBinding } from '@angular/
 import { DayNightService } from '../services/day-night.service';
 
 @Directive({
-  selector: '[dayNightColor]'
+  selector: '[dayNightColor]',
+  providers:[DayNightService],
+  standalone: true
 })
 export class DayNightColorDirective implements OnInit {
-  @HostBinding("class.night") isDark:boolean;
+  @HostBinding("class.night") isDark?:boolean;
   constructor(private dayNightServiceInstance:DayNightService) {
   }
   ngOnInit() {

@@ -1,21 +1,27 @@
 import { Component, OnInit, HostListener} from '@angular/core';
 import { ProjectService } from '../project.service';
 import { ProjectDetail } from '../projects.model';
-import { ActivatedRoute,Router } from '@angular/router';
+import { ActivatedRoute,Router, RouterModule } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { CarouselComponent } from '../../shared/carousel/carousel.component';
+import { BorderHoverLedButtonComponent } from '../../shared/buttons/border-hover-led-button/border-hover-led-button.component';
+import { CommonModule } from '@angular/common';
 
 const ESC_KEY_CODE:number = 27;
 
 @Component({
   selector: 'app-projectdetail',
   templateUrl: './projectdetail.component.html',
-  styleUrls: ['./projectdetail.component.css']
+  styleUrls: ['./projectdetail.component.css'],
+  standalone: true,
+  imports:[RouterModule, CarouselComponent, BorderHoverLedButtonComponent, CommonModule],
+  providers:[ProjectService, Title]
 })
 export class ProjectdetailComponent implements OnInit {
 
   title = 'Arun Babu Madhavan | Projects - ';
-  images:string[];
-  project:ProjectDetail;
+  images?:string[];
+  project?:ProjectDetail;
   constructor(private projectService:ProjectService,private route:ActivatedRoute,private titleService:Title,private router:Router) { 
 
   }
@@ -27,7 +33,7 @@ export class ProjectdetailComponent implements OnInit {
   }
   
 
-  popupClicked(event:Event):void{
+  popupClicked(event:any):void{
     if(event.srcElement.className == "project-popup")
       this.router.navigate(["/projects"]);
   }
