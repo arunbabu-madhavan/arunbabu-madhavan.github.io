@@ -25,16 +25,16 @@
     }
 ,
 
-// {
-//     "ProjectId":"3",
-//     "ProjectName":"this.website();",
-//     "ShortDesc":"Built with Angular",
-//     "InProgress":false,
-//     "Categories":["js"],
-//     "ShowDetails":"true",
-//     "ImageFile":"website.png"
-// }
-// ,
+{
+    "ProjectId":"3",
+    "ProjectName":"this.website();",
+    "ShortDesc":"Built with Angular",
+    "InProgress":false,
+    "Categories":["js"],
+    "ShowDetails":"true",
+    "ImageFile":"website.png"
+}
+,
 
 {
     "ProjectId":"4",
@@ -114,18 +114,18 @@
 }
 ,   
 
-// {
-//     "ProjectId":"8",
-//     "ProjectName":"Multithreaded Text search",
-//     "ShortDesc":"Parallel text search of large files",
-//     "InProgress":false,
-//     "ShowDetails":"true",
-//     "Categories":["cs"],
-//     "ImageFile":"textsearch.png"
-// }
+{
+    "ProjectId":"8",
+    "ProjectName":"Multithreaded Text search",
+    "ShortDesc":"Parallel text search of large files",
+    "InProgress":false,
+    "ShowDetails":"true",
+    "Categories":["cs"],
+    "ImageFile":"textsearch.png"
+}
 
 
-// ,
+,
 
 {
     "ProjectId":"5",
