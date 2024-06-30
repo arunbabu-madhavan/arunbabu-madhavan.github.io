@@ -6,7 +6,7 @@ const colorClasses:string[] = ["blueberry"]//,"blue","green", "orange","purple"]
   selector: '[colorPalette]'
 })
 export class ColorPaletteDirective implements OnInit {
-  @HostBinding("class") class:string;
+  @HostBinding("class") class?:string;
   constructor() {
 
   }

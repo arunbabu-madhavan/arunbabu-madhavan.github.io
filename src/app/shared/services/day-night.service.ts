@@ -4,7 +4,7 @@ import { Injectable } from "@angular/core";
 @Injectable()
 export class DayNightService{
 
-    particleSetting:IParticleSetting;
+    particleSetting?:IParticleSetting;
 
     getParticleSetting():IParticleSetting{
 

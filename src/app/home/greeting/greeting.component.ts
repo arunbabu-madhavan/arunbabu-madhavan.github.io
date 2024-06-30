@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { strictEqual } from 'assert';
-import { stringify } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-greeting',
   templateUrl: './greeting.component.html',
-  styleUrls: ['./greeting.component.css']
+  styleUrls: ['./greeting.component.css'],
+  standalone: true
+
 })
 export class GreetingComponent implements OnInit {
 
-  private greetingMessage:string;
-  private _greeting:string;
-  greetingAdjustment:number;
+  private greetingMessage?:string;
+  private _greeting?:string;
+  greetingAdjustment?:number;
   
   constructor() { }
 
@@ -22,10 +22,10 @@ export class GreetingComponent implements OnInit {
   }
 
   public get Greeting() : string {
-    return this.greetingMessage;
+    return this.greetingMessage!;
   }
 
-  getGreetingMessage():string{
+  getGreetingMessage():string | any{
      let greeting:string;
 
      var now = new Date();

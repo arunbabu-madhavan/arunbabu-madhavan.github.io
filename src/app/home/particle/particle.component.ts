@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ViewChild, ElementRef, NgZone, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ElementRef, NgZone, Input, OnChanges, AfterViewInit } from '@angular/core';
 import { IParticleSetting } from './IParticle';
 import { DayNightService } from '../../shared/services/day-night.service';
 
@@ -7,19 +7,21 @@ const initialSpeed:number = 2;
 @Component({
   selector: 'app-particle',
   templateUrl: './particle.component.html',
+  standalone:true,
+  providers:[DayNightService]
 })
 export class ParticleComponent implements OnInit,OnChanges {
-  @ViewChild('particleCanvas') canvasRef:ElementRef;
+  @ViewChild('particleCanvas') canvasRef?:ElementRef;
   
   @Input('speed') speedFactor:number;
 
   @HostListener('window:resize', ['$event'])
-  onResize(event) {
+  onResize(event:any) {
     this.height =  event.target.innerHeight;
     this.width =  event.target.innerWidth;
-    this.sphereRadius = this.width < 600 ?  100 * (this.width/100) : particleRadius;
-    this.canvasRef.nativeElement.height =  window.innerHeight;
-    this.canvasRef.nativeElement.width =  window.innerWidth;
+    this.sphereRadius = this.width! < 600 ?  100 * (this.width!/100) : particleRadius;
+    this.canvasRef!.nativeElement.height =  window.innerHeight;
+    this.canvasRef!.nativeElement.width =  window.innerWidth;
     this.setupParticles();
     
   }
@@ -27,63 +29,66 @@ export class ParticleComponent implements OnInit,OnChanges {
   ngOnChanges(){
     this.turnSpeed =  this.speedFactor*Math.PI/1900;
   }
-  backgroundcolor:string;
-  width:number;
-  height:number;
-  particleSettings: IParticleSetting;
-  private sphereRadius:number;
-  private wait:number;
-  private count:number;
-  private displayWidth:number;
-  private displayHeight:number;
-  private numToAddEachFrame:number;
-  private particleAlpha:number;
+  backgroundcolor?:string;
+  width?:number;
+  height?:number;
+  particleSettings?: IParticleSetting;
+  private sphereRadius?:number;
+  private wait?:number;
+  private count?:number;
+  private displayWidth?:number;
+  private displayHeight?:number;
+  private numToAddEachFrame?:number;
+  private particleAlpha?:number;
 
-  private fLen:number;
-  private zMax:number;
-  private projCenterX:number;
-  private projCenterY:number;
-  private sphereCenterX:number;
-  private sphereCenterY:number;
-  private sphereCenterZ:number;
+  private fLen?:number;
+  private zMax?:number;
+  private projCenterX?:number;
+  private projCenterY?:number;
+  private sphereCenterX?:number;
+  private sphereCenterY?:number;
+  private sphereCenterZ?:number;
   
-  private zeroAlphaDepth:number;
-  private turnAngle:number;
-  private turnSpeed:number;
-  private x0:number;
-  private y0:number;
-  private z0:number;
-  private particleList:any;
-  private objectPool:any;
-  private m:number;
-  private gravity:number;
-  private outsideFrame:boolean;
-  private theta:number;
-  private phi:number;
-  private randAccelX:number;
-  private randAccelY:number
-  private randAccelZ:number;
-  private rgbString:string;
-  private rotX:number;
-  private rotZ:number;
-  private depthAlphaFactor:number;
-  private nextParticle:any;
-	private sinAngle:number;
-	private cosAngle:number;
+  private zeroAlphaDepth?:number;
+  private turnAngle?:number;
+  private turnSpeed?:number;
+  private x0?:number;
+  private y0?:number;
+  private z0?:number;
+  private particleList?:any;
+  private objectPool?:any;
+  private m?:number;
+  private gravity?:number;
+  private outsideFrame?:boolean;
+  private theta?:number;
+  private phi?:number;
+  private randAccelX?:number;
+  private randAccelY?:number
+  private randAccelZ?:number;
+  private rgbString?:string;
+  private rotX?:number;
+  private rotZ?:number;
+  private depthAlphaFactor?:number;
+  private nextParticle?:any;
+	private sinAngle?:number;
+	private cosAngle?:number;
   constructor(private ngZone: NgZone,private particleService:DayNightService) { 
     this.speedFactor =initialSpeed;
     this.sphereRadius = particleRadius;
   }
 
   ngOnInit() {
+    setTimeout(() => {
+      
       this.height =  window.innerHeight;
       this.width = window.innerWidth;
-      this.canvasRef.nativeElement.height = this.height;
-      this.canvasRef.nativeElement.width = this.width; 
+      this.canvasRef!.nativeElement.height = this.height;
+      this.canvasRef!.nativeElement.width = this.width; 
       this.particleSettings  = this.particleService.getParticleSetting();
       this.backgroundcolor = this.particleService.getBackgroundColor();
       this.setupParticles();
       this.ngZone.runOutsideAngular(()=>this.animate());
+    }, 100);
   }
 
   private setupParticles(){
@@ -92,14 +97,14 @@ export class ParticleComponent implements OnInit,OnChanges {
     this.wait = 1;
     this.count = (this.wait - 1);
     this.numToAddEachFrame = 8;
-    this.rgbString = "rgba("+this.particleSettings.r+","+this.particleSettings.g+","+this.particleSettings.b+","; //partial string for color which will be completed by appending alpha value.
+    this.rgbString = "rgba("+this.particleSettings!.r+","+this.particleSettings!.g+","+this.particleSettings!.b+","; //partial string for color which will be completed by appending alpha value.
     this.particleAlpha = 1; //maximum alpha
 
-    this.displayHeight = this.canvasRef.nativeElement.height;
-    this.displayWidth = this.canvasRef.nativeElement.width; 
+    this.displayHeight = this.canvasRef!.nativeElement.height;
+    this.displayWidth = this.canvasRef!.nativeElement.width; 
       
-    this.projCenterX = this.displayWidth/2;
-    this.projCenterY = this.displayHeight/2;
+    this.projCenterX = this.displayWidth!/2;
+    this.projCenterY = this.displayHeight!/2;
       
     this.fLen = 320;
     this.zMax = this.fLen - 2;
@@ -114,7 +119,7 @@ export class ParticleComponent implements OnInit,OnChanges {
    
     this.sphereCenterX = 0;
     this.sphereCenterY = 0;
-    this.sphereCenterZ = -3 - this.sphereRadius;
+    this.sphereCenterZ = -3 - this.sphereRadius!;
       //alpha values will lessen as particles move further back, causing depth-based darkening:
     this.zeroAlphaDepth = -750; 
       
@@ -123,17 +128,17 @@ export class ParticleComponent implements OnInit,OnChanges {
   }
 
   private animate(){
-      let context: CanvasRenderingContext2D = this.canvasRef.nativeElement.getContext('2d');
-      this.count++;
-          if(this.count >= this.wait){
+      let context: CanvasRenderingContext2D = this.canvasRef!.nativeElement.getContext('2d');
+      this.count!++;
+          if(this.count! >= this.wait!){
             this.count = 0;
-            for(let i=0;i<this.numToAddEachFrame;i++){
+            for(let i=0;i<this.numToAddEachFrame!;i++){
               this.theta = Math.random()*2*Math.PI;
               this.phi = Math.acos(Math.random()*2-1);
-              this.x0 = this.sphereRadius*Math.sin(this.phi)*Math.cos(this.theta);
-              this.y0 = this.sphereRadius*Math.sin(this.phi)*Math.sin(this.theta);
-              this.z0 = this.sphereRadius*Math.cos(this.phi);
-              var p = this.addParticle(this.x0, this.sphereCenterY + this.y0, this.sphereCenterZ + this.z0, 0.002*this.x0, 0.002*this.y0, 0.002*this.z0);
+              this.x0 = this.sphereRadius!*Math.sin(this.phi)*Math.cos(this.theta);
+              this.y0 = this.sphereRadius!*Math.sin(this.phi)*Math.sin(this.theta);
+              this.z0 = this.sphereRadius!*Math.cos(this.phi);
+              var p = this.addParticle(this.x0, this.sphereCenterY! + this.y0, this.sphereCenterZ! + this.z0, 0.002*this.x0, 0.002*this.y0, 0.002*this.z0);
       
               //we set some "envelope" parameters which will control the evolving alpha of the particles.
               p.attack = 50;
@@ -151,12 +156,12 @@ export class ParticleComponent implements OnInit,OnChanges {
               p.accelZ = 0;
             }
           }
-          this.turnAngle = (this.turnAngle + this.turnSpeed) % (2*Math.PI);
+          this.turnAngle = (this.turnAngle! + this.turnSpeed!) % (2*Math.PI);
           this.sinAngle = Math.sin(this.turnAngle);
           this.cosAngle = Math.cos(this.turnAngle);
           
-          context.fillStyle = this.backgroundcolor;
-          context.fillRect(0,0,this.displayWidth,this.displayHeight);
+          context.fillStyle = this.backgroundcolor!;
+          context.fillRect(0,0,this.displayWidth!,this.displayHeight!);
           
           p = this.particleList.first;
           while (p != null) {
@@ -166,20 +171,20 @@ export class ParticleComponent implements OnInit,OnChanges {
             
             //if the particle is past its "stuck" time, it will begin to move.
             if (p.age > p.stuckTime) {
-              p.velX += p.accelX + this.randAccelX*(Math.random()*2 - 1);
-              p.velY += p.accelY + this.randAccelY*(Math.random()*2 - 1);
-              p.velZ += p.accelZ + this.randAccelZ*(Math.random()*2 - 1);
+              p.velX += p.accelX + this.randAccelX!*(Math.random()*2 - 1);
+              p.velY += p.accelY + this.randAccelY!*(Math.random()*2 - 1);
+              p.velZ += p.accelZ + this.randAccelZ!*(Math.random()*2 - 1);
               
               p.x += p.velX;
               p.y += p.velY;
               p.z += p.velZ;
             }
             
-            this.rotX = this.cosAngle*p.x + this.sinAngle*(p.z - this.sphereCenterZ);
-            this.rotZ = -this.sinAngle*p.x + this.cosAngle*(p.z - this.sphereCenterZ) + this.sphereCenterZ;
-            this.m = this.fLen/(this.fLen - this.rotZ);
-            p.projX = this.rotX*this.m + this.projCenterX;
-            p.projY = p.y*this.m + this.projCenterY;
+            this.rotX = this.cosAngle*p.x + this.sinAngle*(p.z - this.sphereCenterZ!);
+            this.rotZ = -this.sinAngle*p.x + this.cosAngle*(p.z - this.sphereCenterZ!) + this.sphereCenterZ!;
+            this.m = this.fLen!/(this.fLen! - this.rotZ);
+            p.projX = this.rotX*this.m + this.projCenterX!;
+            p.projY = p.y*this.m + this.projCenterY!;
             
             //update alpha according to envelope parameters.
             if (p.age < p.attack+p.hold+p.decay) {
@@ -197,7 +202,7 @@ export class ParticleComponent implements OnInit,OnChanges {
               p.dead = true;
             }
             
-            if ((p.projX > this.displayWidth)||(p.projX<0)||(p.projY<0)||(p.projY>this.displayHeight)||(this.rotZ>this.zMax)) {
+            if ((p.projX > this.displayWidth!)||(p.projX<0)||(p.projY<0)||(p.projY>this.displayHeight!)||(this.rotZ>this.zMax!)) {
                 this.outsideFrame = true;
             }
             else {
@@ -208,13 +213,13 @@ export class ParticleComponent implements OnInit,OnChanges {
               this.recycle(p);
             }
             else{
-              this.depthAlphaFactor = (1-this.rotZ/this.zeroAlphaDepth);
+              this.depthAlphaFactor = (1-this.rotZ/this.zeroAlphaDepth!);
               this.depthAlphaFactor = (this.depthAlphaFactor > 1) ? 1 : ((this.depthAlphaFactor<0) ? 0 : this.depthAlphaFactor);
-              context.fillStyle = this.rgbString + this.depthAlphaFactor*p.alpha + ")";
+              context.fillStyle = this.rgbString! + this.depthAlphaFactor*p.alpha + ")";
               
               //draw
               context.beginPath();
-              context.arc(p.projX, p.projY, this.m*this.particleSettings.radius, 0, 2*Math.PI, false);
+              context.arc(p.projX, p.projY, this.m*this.particleSettings!.radius, 0, 2*Math.PI, false);
               context.closePath();
               context.fill();
             }
@@ -223,7 +228,7 @@ export class ParticleComponent implements OnInit,OnChanges {
     requestAnimationFrame(()=>this.animate());
   }
 
-  private addParticle(x0,y0,z0,vx0,vy0,vz0):any {
+  private addParticle(x0:any,y0:any,z0:any,vx0:any,vy0:any,vz0:any):any {
     let newParticle:any;
     let color:string;
 
@@ -275,7 +280,7 @@ export class ParticleComponent implements OnInit,OnChanges {
     return newParticle;	
   }
 
-  private recycle(p):void {
+  private recycle(p:any):void {
     if (this.particleList.first == p) {
       if (p.next != null) {
         p.next.prev = null;

@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd, RouterOutlet } from '@angular/router';
 import { filter,map,mergeMap } from 'rxjs/operators'
 import { LayoutManager } from './shared/services/layout.service';
 import { routerTransition } from './router.transtions';
+import { FooterComponent } from './shared/footer/footer.component';
+import { TopNavigationBarComponent } from './shared/top-navigation-bar/top-navigation-bar.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   animations: [ routerTransition ],
-  styleUrls: ['./app.component.css']
+  imports:[RouterOutlet, FooterComponent, TopNavigationBarComponent],
+  providers:[LayoutManager],
+  styleUrls: ['./app.component.css'],
+  standalone:true
 })
 export class AppComponent {
   title = 'Arun Babu Madhavan | ';
@@ -47,8 +52,8 @@ export class AppComponent {
   
   });
 }
- private node:string;
-getState(outlet) {
+ private node?:string;
+getState(outlet:any) {
   
   return outlet && outlet.activatedRouteData && outlet.activatedRouteData['state'];
 
